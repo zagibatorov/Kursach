@@ -6,7 +6,7 @@ body{
     justify-content: center;
 }
 .main{
-    width: 1920px;
+    max-width: 1920px;
     background-color: black;
 }
 .header, .mainScreen, .about, .characters, .media, .footer{
@@ -15,24 +15,30 @@ body{
 }
 .header, .headerButtons, .headerBtn, .buyButtons, .abbreviation, .aboutContent, .card, .page, .imagesTop, .imagesBottom, .footer, .logos{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header{
-    height: 150px;
+    height: 100px;
     align-items: center;
     justify-content: space-around;
 }
 .mainScreen{
-    height: 1089px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .about{
-    height: 1232px;
+
 }
-.characters{
-    height: 1080px;
+/* .characters{
+
 }
 .media{
-    height: 1232px;
-}
+
+} */
 .footer{
     height: 156px;
     justify-content: space-around;
@@ -46,96 +52,105 @@ body{
 .header .headerButtons{
     height: 60px;
     background-color: orange;
-    margin-right: 69px;
+    gap: 21px;
 }
 .headerButtons .headerBtn{
     background-color: red;
     border-radius: 25px;
     align-items: center;
 }
-.headerButtons .headerBtn:nth-child(1){
-    margin-right: 21px;
+/* .headerButtons .headerBtn:nth-child(1):hover{
+
 }
-.headerButtons .headerBtn:nth-child(2){
-    margin-right: 21px;
+.headerButtons .headerBtn:nth-child(2):hover{
+
+
 }
-.headerButtons .headerBtn:nth-child(3){
-    margin-right: 21px;
-}
+.headerButtons .headerBtn:nth-child(3):hover{
+
+} */
 .headerButtons .headerBtn a{
     text-decoration: none;
     color: white;
     font-size: 24px;
 }
 .abbreviation{
+    white-space: nowrap;
+    font-family: 'Courier New';
     background-color: gray;
     border: 5px solid white;
     border-radius: 25px;
     justify-content: center;
+    height: 80px;
+    margin-top: 20px;
+    font-size: 48px;
+
 }
 .abbreviation p{
-    font-family: 'Courier New';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
 }
+
 .abbrMain{
-    margin: 99px 68px 244px 67px;
-}
-.abbrMain p{
+    width: 1700px;
     font-size: 36px;
 }
+
 .abbrAbout{
-    margin: 55px 763px 75px 763px;
+    width: 1700px;
 }
-.abbrAbout p{
-    font-size: 48px;
-}
+
 .abbrChar{
-    margin: 63px 103px 79px 104px;
+    
 }
-.abbrChar p{
-    font-size: 48px;
-}
+
 .mainScreenImg{
-    width: 678px;
-    height: 200px;
-    margin: 0px 621px 259px 621px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
 }
 .mainScreenImg img{
-    width: 100%;
-    height: 100%;
+    width: 678px;
+    height: 200px;
 }
 .buyButtons{
+    width: 100%;
+    margin-bottom: 20px;
     justify-content: space-around;
-    background-color: chocolate;
 }
 .buyButtons .buyBtn{
     width: 400px;
     height: 120px;
-    background-color: pink;
+    background-color: rgb(255, 0, 43);
 }
 .aboutContent{
-    background-color: blue;
+    margin-top: 20px;
+    height: 620px;
+    gap: 20px;
     justify-content: space-between;
-    margin: 0 69px 53px 66px;
 }
 .aboutContent .left{
     width: 762px;
-    height: 722px;
     background-color: chocolate;
 }
 .aboutContent .left img{
-    width: 100%;
-    height: 100%;
+
 }
 .aboutContent .right{
     width: 984px;
-    height: 722px;
+    height: 100px;
     background-color: chartreuse;
 }
 .bottomAboutImg{
     width: 1302px;
     height: 205px;
     background-color: blueviolet;
-    margin: 0 304px;
+    margin-top: 20px;
 }
 .characters .card{
     width: 1577px;
