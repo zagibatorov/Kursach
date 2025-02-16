@@ -6,136 +6,153 @@ body{
     justify-content: center;
 }
 .main{
-    width: 1920px;
+    max-width: 1920px;
     background-color: black;
 }
 .header, .mainScreen, .about, .characters, .media, .footer{
     width: 100%;
     border-bottom: 5px solid white;
 }
-.header, .headerButtons, .headerBtn, .buyButtons, .abbreviation, .aboutContent, .card, .page, .imagesTop, .imagesBottom, .footer, .logos{
+.header, .headerButtons, .headerBtn, .buyButtons, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .page, .media, .imagesTop, .imagesBottom, .footer, .logos{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainScreen, .about, .characters, .media{
+    flex-direction: column;
 }
 .header{
-    height: 150px;
+    height: 100px;
     align-items: center;
     justify-content: space-around;
 }
-.mainScreen{
-    height: 1089px;
-}
-.about{
-    height: 1232px;
-}
-.characters{
-    height: 1080px;
+/* .characters{
+
 }
 .media{
-    height: 1232px;
-}
+
+} */
 .footer{
     height: 156px;
     justify-content: space-around;
     align-items: center;
 }
 .header .headerImg{
-    width: 649px;
-    height: 60px;
     background-color: brown;
+}
+.header .headerImg img{
+    width: 100%;
+    height: 100%;
 }
 .header .headerButtons{
     height: 60px;
     background-color: orange;
-    margin-right: 69px;
+    gap: 21px;
 }
 .headerButtons .headerBtn{
     background-color: red;
     border-radius: 25px;
     align-items: center;
 }
-.headerButtons .headerBtn:nth-child(1){
-    margin-right: 21px;
+/* .headerButtons .headerBtn:nth-child(1):hover{
+
 }
-.headerButtons .headerBtn:nth-child(2){
-    margin-right: 21px;
+.headerButtons .headerBtn:nth-child(2):hover{
+
+
 }
-.headerButtons .headerBtn:nth-child(3){
-    margin-right: 21px;
-}
+.headerButtons .headerBtn:nth-child(3):hover{
+
+} */
 .headerButtons .headerBtn a{
     text-decoration: none;
     color: white;
     font-size: 24px;
 }
 .abbreviation{
+    white-space: nowrap;
+    font-family: 'Courier New';
     background-color: gray;
     border: 5px solid white;
     border-radius: 25px;
     justify-content: center;
+    height: 80px;
+    margin-top: 20px;
+    font-size: 48px;
+
 }
 .abbreviation p{
-    font-family: 'Courier New';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
 }
-.abbrMain{
-    margin: 99px 68px 244px 67px;
+
+.abbrMain, .abbrAbout, .abbrChar, .abbrMedia{
+    width: 1700px;
 }
-.abbrMain p{
-    font-size: 36px;
-}
+/* 
 .abbrAbout{
-    margin: 55px 763px 75px 763px;
+    width: 1700px;
 }
-.abbrAbout p{
-    font-size: 48px;
-}
+
 .abbrChar{
-    margin: 63px 103px 79px 104px;
-}
-.abbrChar p{
-    font-size: 48px;
-}
+    width: 1700px;
+} */
+
 .mainScreenImg{
-    width: 678px;
-    height: 200px;
-    margin: 0px 621px 259px 621px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
 }
 .mainScreenImg img{
-    width: 100%;
-    height: 100%;
+    width: 678px;
+    height: 200px;
 }
 .buyButtons{
+    width: 100%;
+    margin-bottom: 20px;
     justify-content: space-around;
-    background-color: chocolate;
 }
 .buyButtons .buyBtn{
     width: 400px;
     height: 120px;
-    background-color: pink;
+    background-color: rgb(255, 0, 43);
 }
 .aboutContent{
-    background-color: blue;
-    justify-content: space-between;
-    margin: 0 69px 53px 66px;
+    margin-top: 20px;
+    height: 620px;
+    gap: 20px;
 }
 .aboutContent .left{
-    width: 762px;
-    height: 722px;
+    height: 620px;
     background-color: chocolate;
 }
+
 .aboutContent .left img{
     width: 100%;
     height: 100%;
 }
+/* .aboutContent .left img{
+
+} */
 .aboutContent .right{
     width: 984px;
-    height: 722px;
     background-color: chartreuse;
 }
+.aboutContent .right p{
+    font-size: 48px;
+}
 .bottomAboutImg{
-    width: 1302px;
-    height: 205px;
     background-color: blueviolet;
-    margin: 0 304px;
+    margin-top: 20px;
+}
+.bottomAboutImg img{
+    width: 100%;
+    height: 100%;
 }
 .characters .card{
     width: 1577px;
@@ -172,15 +189,7 @@ body{
     border-radius: 50%;
     background-color: black;
 }
-.imagesMedia{
-    margin: 43px 379px 110px 380px;
-}
-.abbrMedia{
-    margin: 63px 810px 0 810px;
-}
-.abbrMedia p{
-    font-size: 48px;
-}
+
 .imagesMedia .imagesTop, .imagesMedia .imagesBottom{
     justify-content: space-between;
 }
