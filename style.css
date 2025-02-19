@@ -33,9 +33,9 @@ body{
     align-items: center;
 }
 
-.about{
+/* .about{
 
-}
+} */
 /* .characters{
 
 }
@@ -55,12 +55,13 @@ body{
     height: 100%;
 }
 .header .headerButtons{
-    height: 60px;
     background-color: orange;
     gap: 21px;
 }
 .headerButtons .headerBtn{
-    background-color: red;
+    height: 60px;
+    background-color: gray;
+    border: 5px solid white;
     border-radius: 25px;
     align-items: center;
 }
@@ -78,6 +79,7 @@ body{
     text-decoration: none;
     color: white;
     font-size: 24px;
+    font-family: "Press Start 2P", serif;
 }
 .abbreviation{
     white-space: nowrap;
@@ -88,7 +90,7 @@ body{
     justify-content: center;
     height: 80px;
     margin-top: 20px;
-    font-size: 48px;
+    font-size: 40px;
 
 }
 .abbreviation p{
@@ -97,12 +99,14 @@ body{
     align-items: center;
     width: 100%;
     margin: 0;
+    font-family: "Press Start 2P", serif;
+    color: white;
 }
 
 
-.abbrMain, .abbrAbout, .abbrChar, .abbrMedia{
+/* .abbrMain, .abbrAbout, .abbrChar, .abbrMedia{
     width: 1700px;
-}
+} */
 /* 
 .abbrMain{
     width: 1700px;
@@ -141,37 +145,34 @@ body{
     background-color: rgb(255, 0, 43);
 }
 .aboutContent{
-    margin-top: 20px;
-    height: 620px;
     gap: 20px;
 }
 .aboutContent .left{
-    height: 620px;
-
-    justify-content: space-between;
-}
-.aboutContent .left{
-    width: 762px;
+    height: 520px;
     background-color: chocolate;
 }
-
 .aboutContent .left img{
-
+    width: 100%;
+    height: 100%;
 }
-/* .aboutContent .left img{
-
-} */
 .aboutContent .right{
     width: 984px;
-    height: 100px;
     background-color: chartreuse;
+}
+.aboutContent .right p{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0; */
+    text-align: center;
+    font-family: "Sofia Sans", serif;
 }
 .aboutContent .right p{
     font-size: 48px;
 }
 .bottomAboutImg{
     background-color: blueviolet;
-    margin-top: 20px;
 }
 .bottomAboutImg img{
     width: 100%;
@@ -269,4 +270,9 @@ body{
     width: 552px;
     height: 59px;
     background-color: darkgoldenrod;
+}
+.footer .support p{
+    text-align: center;
+    font-family: "Sofia Sans", serif;
+    font-size: 20px;
 }
