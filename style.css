@@ -166,7 +166,9 @@ body{
 
 .aboutContent .left{
     height: 520px;
-    background-color: chocolate;
+    background-color: #47E6F8;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 .aboutContent .left img{
@@ -188,9 +190,9 @@ body{
     font-size: 48px;
 }
 
-.bottomAboutImg{
+/* .bottomAboutImg{
     background-color: blueviolet;
-}
+} */
 
 .bottomAboutImg img{
     width: 100%;
@@ -202,6 +204,7 @@ body{
     height: 688px;
     background-color: #C9BBF1;
     border-radius: 25px;
+    margin: 60px 0;
 }
 
 .characters .card .charImg img{
@@ -209,15 +212,16 @@ body{
     height: 100%;
 }
 
-.characters .card .charStory{
+/* .characters .card .charStory{
     background-color: crimson;
-}
+} */
 
 .characters .card .charStory .cardStory{
     width: 1025px;
-    height: 575px;
     background-color: white;
     border-radius: 25px;
+    height: 100%;
+
 }
 
 .characters .card .charStory .cardStory .charName{
@@ -231,7 +235,14 @@ body{
 .characters .card .charStory .cardStory p{
     font-family: "Sofia Sans", serif;
     font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin: 0;
+    height: 100%;
+    padding: 25px 15px;
+    
 }
 
 .characters .card .charStory .cardStory .charName p{
@@ -244,9 +255,8 @@ body{
 
 .characters .card .charStory .page{
     width: 215px;
-    background-color: deeppink;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .characters .card .charStory .page .cardNum{
     width: 31px;
