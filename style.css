@@ -5,27 +5,33 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .main{
     max-width: 1920px;
     background-color: black;
 }
+
 .header, .mainScreen, .about, .characters, .media, .footer{
     width: 100%;
     border-bottom: 5px solid white;
 }
-.header, .headerButtons, .headerBtn, .buyButtons, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .page, .media, .imagesTop, .imagesBottom, .footer, .logos{
+
+.header, .headerButtons, .headerBtn, .buyButtons, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charStory, .page, .media, .imagesTop, .imagesBottom, .footer, .logos{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mainScreen, .about, .characters, .media{
+
+.mainScreen, .about, .characters, .charStory, .media{
     flex-direction: column;
 }
+
 .header{
     height: 100px;
     align-items: center;
     justify-content: space-around;
 }
+
 .mainScreen{
     display: flex;
     flex-direction: column;
@@ -47,17 +53,21 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
 .header .headerImg{
     background-color: brown;
 }
+
 .header .headerImg img{
     width: 100%;
     height: 100%;
 }
+
 .header .headerButtons{
     background-color: orange;
     gap: 21px;
 }
+
 .headerButtons .headerBtn{
     height: 60px;
     background-color: gray;
@@ -65,6 +75,7 @@ body{
     border-radius: 25px;
     align-items: center;
 }
+
 /* .headerButtons .headerBtn:nth-child(1):hover{
 
 }
@@ -75,12 +86,14 @@ body{
 .headerButtons .headerBtn:nth-child(3):hover{
 
 } */
+
 .headerButtons .headerBtn a{
     text-decoration: none;
     color: white;
     font-size: 24px;
     font-family: "Press Start 2P", serif;
 }
+
 .abbreviation{
     white-space: nowrap;
     font-family: 'Courier New';
@@ -93,6 +106,7 @@ body{
     font-size: 40px;
 
 }
+
 .abbreviation p{
     display: flex;
     justify-content: center;
@@ -102,7 +116,6 @@ body{
     font-family: "Press Start 2P", serif;
     color: white;
 }
-
 
 /* .abbrMain, .abbrAbout, .abbrChar, .abbrMedia{
     width: 1700px;
@@ -122,7 +135,6 @@ body{
     width: 1700px;
 } */
 
-
 .mainScreenImg{
     display: flex;
     align-items: center;
@@ -130,82 +142,111 @@ body{
     width: 100%;
     height: 600px;
 }
+
 .mainScreenImg img{
     width: 678px;
     height: 200px;
 }
+
 .buyButtons{
     width: 100%;
     margin-bottom: 20px;
     justify-content: space-around;
 }
+
 .buyButtons .buyBtn{
     width: 400px;
     height: 120px;
     background-color: rgb(255, 0, 43);
 }
+
 .aboutContent{
     gap: 20px;
 }
+
 .aboutContent .left{
     height: 520px;
     background-color: chocolate;
 }
+
 .aboutContent .left img{
     width: 100%;
     height: 100%;
 }
+
 .aboutContent .right{
     width: 984px;
     background-color: chartreuse;
 }
+
 .aboutContent .right p{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0; */
     text-align: center;
     font-family: "Sofia Sans", serif;
 }
+
 .aboutContent .right p{
     font-size: 48px;
 }
+
 .bottomAboutImg{
     background-color: blueviolet;
 }
+
 .bottomAboutImg img{
     width: 100%;
     height: 100%;
 }
+
 .characters .card{
     width: 1577px;
     height: 688px;
     background-color: #C9BBF1;
-    margin: 79px 171px 129px 172px;
+    border-radius: 25px;
 }
-.characters .card .charImg{
-    width: 500px;
-    height: 689px;
-    background-color: darksalmon;
-    margin-right: 25px;
+
+.characters .card .charImg img{
+    width: 100%;
+    height: 100%;
 }
+
 .characters .card .charStory{
     background-color: crimson;
 }
+
 .characters .card .charStory .cardStory{
     width: 1025px;
     height: 575px;
     background-color: white;
-    margin: 30px 0 19px 0;
     border-radius: 25px;
 }
+
+.characters .card .charStory .cardStory .charName{
+    width: 100%;
+    background-color: #C9BBF1;
+    border: 5px solid black;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.characters .card .charStory .cardStory p{
+    font-family: "Sofia Sans", serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+.characters .card .charStory .cardStory .charName p{
+    text-align: center;
+    font-family: "Press Start 2P", serif;
+    font-size: 64px;
+    margin: 0;
+    padding: 20px 0;
+}
+
 .characters .card .charStory .page{
     width: 215px;
-    height: 31px;
     background-color: deeppink;
     justify-content: space-between;
-    margin: 26px auto 26px auto;
+    margin-top: 25px;
 }
 .characters .card .charStory .page .cardNum{
     width: 31px;
