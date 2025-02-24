@@ -111,6 +111,28 @@ body{
     font-size: 24px;
     font-family: "Press Start 2P", serif;
 }
+/* .abbreviationnn{
+    white-space: nowrap;
+    font-family: 'Courier New';
+    background-color: gray;
+    border: 5px solid white;
+    border-radius: 25px;
+    justify-content: center;
+    height: 80px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.abbreviationnn p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    font-family: "Press Start 2P", serif;
+    color: white;
+} */
+
 
 .abbreviation{
     white-space: nowrap;
@@ -122,6 +144,7 @@ body{
     height: 80px;
     margin-top: 20px;
     font-size: 40px;
+    padding: 0 20px;
 }
 
 .abbreviation p{
@@ -133,24 +156,6 @@ body{
     font-family: "Press Start 2P", serif;
     color: white;
 }
-
-/* .abbrMain, .abbrAbout, .abbrChar, .abbrMedia{
-    width: 1700px;
-} */
-/* 
-.abbrMain{
-    width: 1700px;
-    font-size: 36px;
-}
-
-.abbrAbout{
-    width: 1700px;
-}
-
-.abbrChar{
-
-    width: 1700px;
-} */
 
 .mainScreenImg{
     display: flex;
@@ -216,10 +221,6 @@ body{
     font-size: 48px;
 }
 
-/* .bottomAboutImg{
-    background-color: blueviolet;
-} */
-
 .bottomAboutImg img{
     width: 100%;
     height: 100%;
@@ -230,17 +231,13 @@ body{
     height: 688px;
     background-color: #C9BBF1;
     border-radius: 25px;
-    margin: 75px 0;
+    margin: 77px 0;
 }
 
 .characters .card .charImg img{
     width: 100%;
     height: 100%;
 }
-
-/* .characters .card .charStory{
-    background-color: crimson;
-} */
 
 .characters .card .charStory .cardStory{
     width: 1025px;
@@ -292,29 +289,40 @@ body{
 }
 
 .imagesMedia .imagesTop, .imagesMedia .imagesBottom{
-    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.imagesMedia .imagesTop, .imagesMedia .imagesBottom{
+    gap: 20px;
 }
 
 .imagesMedia .imagesTop .imgMedia:nth-child(1){
-    width: 580px;
-    height: 440px;
     background-color: #A6109C;
+    padding: 10px;
+    border-radius: 25px;
 }
 .imagesMedia .imagesTop .imgMedia:nth-child(2){
-    width: 560px;
-    height: 426px;
     background-color: #096D80;
+    padding: 10px;
+    border-radius: 25px;
 }
 .imagesMedia .imagesBottom .imgMedia:nth-child(1){
-    width: 560px;
-    height: 393px;
     background-color: #065524;
+    padding: 10px;
+    border-radius: 25px;
 }
 .imagesMedia .imagesBottom .imgMedia:nth-child(2){
-    width: 576px;
-    height: 420px;
     background-color: #692F06;
+    padding: 10px;
+    border-radius: 25px;
 }
+
+.imagesMedia .imagesTop .imgMedia img, .imagesMedia .imagesBottom .imgMedia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
 .footer .footerLogo{
     width: 630px;
     height: 156px;
