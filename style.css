@@ -7,6 +7,9 @@ body{
     overflow-x: hidden;
 }
 
+.main{
+    min-width: 1920px;
+}
 
 
 /* Общие свойства */
@@ -75,6 +78,34 @@ body{
     height: 100px;
     align-items: center;
     justify-content: space-around;
+}
+
+.mainScreen{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.video{
+    z-index: -1;
+    position: absolute;
+}
+
+.contentWrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    height: 156px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .header .headerImg img{
@@ -354,17 +385,32 @@ body{
     margin: 30px 0;
 }
 
-.imagesMedia .imagesTop{
+.imagesMedia .imagesTop, .imagesMedia .imagesBottom{
     margin-top: 20px;
     gap: 70px;
 }
 
-.imagesMedia .imagesBottom{
-    margin-top: 20px;
-    gap: 70px;
+.imagesMedia .imagesTop .imgMedia:nth-child(1){
+    background-color: #A6109C;
+    transform: rotate(-7deg);
+    padding: 10px;
+    border-radius: 25px;
 }
-
-.imagesMedia .imagesTop .imgMedia, .imagesMedia .imagesBottom .imgMedia{
+.imagesMedia .imagesTop .imgMedia:nth-child(2){
+    background-color: #096D80;
+    transform: rotate(-7deg);
+    padding: 10px;
+    border-radius: 25px;
+}
+.imagesMedia .imagesBottom .imgMedia:nth-child(1){
+    background-color: #065524;
+    transform: rotate(-7deg);
+    padding: 10px;
+    border-radius: 25px;
+}
+.imagesMedia .imagesBottom .imgMedia:nth-child(2){
+    background-color: #692F06;
+    transform: rotate(5deg);
     padding: 10px;
     border-radius: 25px;
 }
