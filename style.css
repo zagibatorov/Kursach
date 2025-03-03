@@ -7,11 +7,6 @@ body{
     overflow-x: hidden;
 }
 
-.main{
-    min-width: 1920px;
-}
-
-
 /* Общие свойства */
 .header, .mainScreen, .about, .characters, .media, .footer{
     width: 100%;
@@ -392,25 +387,25 @@ body{
 
 .imagesMedia .imagesTop .imgMedia:nth-child(1){
     background-color: #A6109C;
-    transform: rotate(-7deg);
+    /* transform: rotate(-7deg); */
     padding: 10px;
     border-radius: 25px;
 }
 .imagesMedia .imagesTop .imgMedia:nth-child(2){
     background-color: #096D80;
-    transform: rotate(-7deg);
+    /* transform: rotate(7deg); */
     padding: 10px;
     border-radius: 25px;
 }
 .imagesMedia .imagesBottom .imgMedia:nth-child(1){
     background-color: #065524;
-    transform: rotate(-7deg);
+    /* transform: rotate(5deg); */
     padding: 10px;
     border-radius: 25px;
 }
 .imagesMedia .imagesBottom .imgMedia:nth-child(2){
     background-color: #692F06;
-    transform: rotate(5deg);
+    /* transform: rotate(-7deg); */
     padding: 10px;
     border-radius: 25px;
 }
@@ -421,39 +416,10 @@ body{
     border-radius: 25px;
 }
 
-.imagesMedia .imagesTop .imgMedia:nth-child(1){
-    background-color: #A6109C;
-    transform: rotate(-7deg);
-
-}
-
-.imagesMedia .imagesTop .imgMedia:nth-child(2){
-    background-color: #096D80;
-    transform: rotate(7deg);
-}
-
-.imagesMedia .imagesBottom .imgMedia:nth-child(1){
-    background-color: #065524;
-    transform: rotate(5deg);
-}
-
-.imagesMedia .imagesBottom .imgMedia:nth-child(2){
-    background-color: #692F06;
-    transform: rotate(-7deg);
-}
-
-
-
 /* футер */
 .footer{
-    height: 156px;
     justify-content: space-around;
     align-items: center;
-}
-
-.footer .footerLogo{
-    width: 630px;
-    height: 156px;
 }
 
 .footer .footerLogo img{
@@ -462,18 +428,8 @@ body{
 }
 
 .footer .logos{
-    background-color: darkcyan;
     align-items: center;
     justify-content: center;
-}
-
-.footer .logos .logoImg{
-    background-color: aqua;
-}
-
-.footer .support{
-    width: 552px;
-    height: 59px;
 }
 
 .footer .support p{
