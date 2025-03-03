@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "PressStart2P";
+    src: url("./fonts/PressStart2P-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SofiaSans";
+    src: url("./fonts/SofiaSans-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +18,7 @@ body{
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+    font-family: "PressStart2P";
 }
 
 /* Общие свойства */
@@ -278,7 +292,7 @@ body{
 }
 
 .aboutContent .right{
-    width: 984px;
+    width: 984px;   
     background-color: white;
     border-radius: 25px;
 }
@@ -376,36 +390,40 @@ body{
     background-repeat: no-repeat;
 }
 
-.media .imagesMedia{
+.imagesMedia{
     margin: 30px 0;
 }
 
-.imagesMedia .imagesTop, .imagesMedia .imagesBottom{
-    margin-top: 20px;
+.imagesTop{
+    gap: 500px;
+}
+
+.imagesBottom{
+    margin: 20px 0;
     gap: 70px;
 }
 
 .imagesMedia .imagesTop .imgMedia:nth-child(1){
     background-color: #A6109C;
-    /* transform: rotate(-7deg); */
+    transform: rotate(-7deg);
     padding: 10px;
     border-radius: 25px;
 }
 .imagesMedia .imagesTop .imgMedia:nth-child(2){
     background-color: #096D80;
-    /* transform: rotate(7deg); */
+    transform: rotate(7deg);
     padding: 10px;
     border-radius: 25px;
 }
 .imagesMedia .imagesBottom .imgMedia:nth-child(1){
     background-color: #065524;
-    /* transform: rotate(5deg); */
+    transform: rotate(-5deg);
     padding: 10px;
     border-radius: 25px;
 }
 .imagesMedia .imagesBottom .imgMedia:nth-child(2){
     background-color: #692F06;
-    /* transform: rotate(-7deg); */
+    transform: rotate(5deg);
     padding: 10px;
     border-radius: 25px;
 }
