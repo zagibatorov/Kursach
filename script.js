@@ -3,8 +3,6 @@ let toChar = document.getElementById('toChar');
 let toMedia = document.getElementById('toMedia');
 let toFooter = document.getElementById('toFooter');
 
-
-
 let aboutBlock = document.getElementById('aboutBlock');
 let charBlock = document.getElementById('charBlock');
 let mediaBlock = document.getElementById('mediaBlock');
@@ -38,3 +36,49 @@ toFooter.addEventListener('click', () => {
         block: 'start'
     });
 });
+
+
+//Чубрики
+
+let imgs = document.querySelectorAll('.imgPart');
+
+imgs.forEach(img => {
+    img.addEventListener('mouseenter', () => {
+            img.classList.add('jumping');
+    });
+    img.addEventListener('mouseleave', () => {
+            img.classList.remove('jumping');
+    })
+})
+
+
+
+
+//Слайд карточек
+
+let chars = document.querySelectorAll('.char');
+let pages = document.querySelectorAll('.cardNum');
+
+let currentIndex = 0;
+
+function showSlide(index){
+    chars.forEach((char, i) => {
+        char.classList.toggle('active', i === index);
+        pages[i].classList.toggle('pageActive', i === index);
+    })
+};
+
+pages.forEach((page, index)=>{
+    page.addEventListener('click', function(){
+        currentIndex = index;
+        showSlide(currentIndex);
+    });
+})
+
+
+
+console.log(chars);
+console.log(pages);
+
+
+

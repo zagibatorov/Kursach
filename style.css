@@ -221,7 +221,21 @@ body{
     /* width: 100%;
     height: 600px; */
     margin: 200px 0;
+    animation: tilt 1s infinite;
 }
+
+@keyframes tilt{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
 
 .mainScreenImg img{
     /* width: 678px;
@@ -299,6 +313,7 @@ body{
     width: 984px;   
     background-color: white;
     border-radius: 25px;
+    padding: 30px;
 }
 
 .aboutContent .right p{
@@ -311,12 +326,17 @@ body{
 }
 
 .bottomAboutImg{
-    background-color: #6560FF;
+    /* background-color: #6560FF; */
     display: flex;
     flex-direction: row;
 }
 .imgPart{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    transition: transform 0.5s ease;
+}
+
+.jumping{
+    transform: translateY(-100px);
 }
 /* .bottomAboutImg img{
     width: 100%;
@@ -393,7 +413,7 @@ body{
 
 
 
-.char:nth-child(1) .cardNum:nth-child(1){
+/* .char:nth-child(1) .cardNum:nth-child(1){
     background-color: #C9BBF1;
 }
 
@@ -411,7 +431,7 @@ body{
 
 .char:nth-child(5) .cardNum:nth-child(5){
     background-color: #E8E8E8;
-}
+} */
 
 
 
@@ -429,9 +449,9 @@ body{
 }
 
 .story{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -473,6 +493,9 @@ body{
 }
 
 .pages{
+    position: relative;
+    top: -88px;
+    right: -930px;
     width: 215px;
     justify-content: space-between;
     margin-top: 20px;
@@ -486,7 +509,9 @@ body{
     background-color: white;
 }
 
-
+.pageActive{
+    background-color: black;
+}
 
 
 /* четвёртый блок (медиа) */
