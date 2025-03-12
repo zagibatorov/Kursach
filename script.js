@@ -1,3 +1,5 @@
+//Переходы по блокам по кнопкам в хедере
+
 let toAbout = document.getElementById('toAbout');
 let toChar = document.getElementById('toChar');
 let toMedia = document.getElementById('toMedia');
@@ -38,6 +40,7 @@ toFooter.addEventListener('click', () => {
 });
 
 
+
 //Чубрики
 
 let imgs = document.querySelectorAll('.imgPart');
@@ -50,7 +53,6 @@ imgs.forEach(img => {
             img.classList.remove('jumping');
     })
 })
-
 
 
 
