@@ -79,8 +79,32 @@ pages.forEach((page, index)=>{
 
 
 
-console.log(chars);
-console.log(pages);
 
+//Увеличение кнопок в первом блоке
 
+let buyButtons = document.querySelectorAll('.buyBtn');
 
+buyButtons.forEach(buyBtn => {
+    buyBtn.addEventListener('mouseover', () => {
+        buyBtn.style.width = '600px';
+        buyBtn.style.height = '180px';
+    });
+    buyBtn.addEventListener('mouseout', () => {
+        buyBtn.style.width = '400px';
+        buyBtn.style.height = '120px';
+    });
+})
+
+//Увеличение картинок в медиа
+
+let mediaImages = document.querySelectorAll('.imgMedia');
+
+mediaImages.forEach(imgMedia => {
+    imgMedia.addEventListener('mouseover', () => {
+        imgMedia.style.backgroundColor = 'gold';
+    })
+    imgMedia.addEventListener('mouseout', () => {
+        imgMedia.style.backgroundColor = '';
+    })
+})
+console.log(mediaImages);
