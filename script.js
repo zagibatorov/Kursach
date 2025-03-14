@@ -86,12 +86,10 @@ let buyButtons = document.querySelectorAll('.buyBtn');
 
 buyButtons.forEach(buyBtn => {
     buyBtn.addEventListener('mouseover', () => {
-        buyBtn.style.width = '600px';
-        buyBtn.style.height = '180px';
+        buyBtn.classList.add = 'buyBtnShadow';
     });
     buyBtn.addEventListener('mouseout', () => {
-        buyBtn.style.width = '400px';
-        buyBtn.style.height = '120px';
+        buyBtn.classList.remove = 'buyBtnShadow';
     });
 })
 

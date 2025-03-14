@@ -28,7 +28,7 @@ body{
     border-bottom: 5px solid white;
 }
 
-.header, .headerButtons, .headerBtn, .buyButtons, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+.header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body{
 
 .abbreviation{
     white-space: nowrap;
-    background-color: gray;
+    background-color: rgba(119, 119, 119, 0.5);
     border: 5px solid white;
     border-radius: 25px;
     justify-content: center;
@@ -114,14 +114,10 @@ body{
     align-items: center;
     padding: 0 20px;
     cursor: pointer;
-}
-
-.headerBtn p{
-    cursor: pointer;
-    text-decoration: none;
     color: white;
     font-size: 24px;
 }
+
 
 /* ховер кнопок */
 .headerBtn:nth-child(1):hover{
@@ -133,17 +129,19 @@ body{
 .headerBtn:nth-child(2):hover{
     background-color: #FFA464;
     border: 5px solid #FF6A00;
+    color: #FF6A00;
 }
 
 .headerBtn:nth-child(3):hover{
-    background-color: #FF5558;
+    background-color: #fd7679;
     border: 5px solid #FF0004;
-
+    color: #FF0004;
 }
 
 .headerBtn:nth-child(4):hover{
     background-color: #AB87FF;
     border: 5px solid #6560FF;
+    color: #6560FF;
 }
 
 /* ховер ссылок */
@@ -227,7 +225,22 @@ body{
     width: 400px;
     height: 120px;
     border-radius: 25px;
+    padding: 15px;
+    font-size: 33px;
+    text-decoration: none;
+    color: black;
+    font-family: 'PressStart2P';
     transition: width 1s ease, height 1s ease;
+}
+
+.buyBtnText{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.buyBtnShadow{
+    box-shadow: 0 0 5px 5px red;
 }
 
 .buyBtn:nth-child(1){
