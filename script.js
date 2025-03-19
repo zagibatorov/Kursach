@@ -43,8 +43,9 @@ toFooter.addEventListener('click', () => {
 
 //Чубрики
 
-let imgs = document.querySelectorAll('.imgPart');
+let imgs = document.querySelectorAll('.imgPart img');
 
+// console.log(imgs);
 imgs.forEach(img => {
     img.addEventListener('mouseenter', () => {
             img.classList.add('jumping');
@@ -93,16 +94,16 @@ buyButtons.forEach(buyBtn => {
     });
 })
 
-//Увеличение картинок в медиа
+//Изменение рамки картинок при наведении в медиа
 
-let mediaImages = document.querySelectorAll('.imgMedia');
+// let mediaImages = document.querySelectorAll('.imgMedia');
 
-mediaImages.forEach(imgMedia => {
-    imgMedia.addEventListener('mouseover', () => {
-        imgMedia.style.backgroundColor = 'gold';
-    })
-    imgMedia.addEventListener('mouseout', () => {
-        imgMedia.style.backgroundColor = '';
-    })
-})
-console.log(mediaImages);
+// mediaImages.forEach(imgMedia => {
+//     imgMedia.addEventListener('mouseover', () => {
+//         imgMedia.style.backgroundColor = 'gold';
+//     })
+//     imgMedia.addEventListener('mouseout', () => {
+//         imgMedia.style.backgroundColor = '';
+//     })
+// })
+// console.log(mediaImages);
