@@ -45,7 +45,7 @@ toFooter.addEventListener('click', () => {
 
 let imgs = document.querySelectorAll('.imgPart img');
 
-// console.log(imgs);
+console.log(imgs);
 imgs.forEach(img => {
     img.addEventListener('mouseenter', () => {
             img.classList.add('jumping');
@@ -83,16 +83,16 @@ pages.forEach((page, index)=>{
 
 //Увеличение кнопок в первом блоке
 
-let buyButtons = document.querySelectorAll('.buyBtn');
+// let buyButtons = document.querySelectorAll('.buyBtn');
 
-buyButtons.forEach(buyBtn => {
-    buyBtn.addEventListener('mouseover', () => {
-        buyBtn.classList.add = 'buyBtnShadow';
-    });
-    buyBtn.addEventListener('mouseout', () => {
-        buyBtn.classList.remove = 'buyBtnShadow';
-    });
-})
+// buyButtons.forEach(buyBtn => {
+//     buyBtn.addEventListener('mouseover', () => {
+//         buyBtn.classList.add = 'buyBtnShadow';
+//     });
+//     buyBtn.addEventListener('mouseout', () => {
+//         buyBtn.classList.remove = 'buyBtnShadow';
+//     });
+// })
 
 //Изменение рамки картинок при наведении в медиа
 
