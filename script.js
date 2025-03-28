@@ -107,3 +107,13 @@ pages.forEach((page, index)=>{
 //     })
 // })
 // console.log(mediaImages);
+
+
+// Админ
+
+let registerBtn = document.getElementById('registerBtn');
+
+registerBtn.addEventListener('click', () => {
+    window.location.href = "admin.html";
+})
+
