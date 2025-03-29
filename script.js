@@ -61,22 +61,61 @@ imgs.forEach(img => {
 
 let chars = document.querySelectorAll('.char');
 let pages = document.querySelectorAll('.cardNum');
+let controls = document.querySelectorAll('.controls');
+let imgIndex = 0;
 
-let currentIndex = 0;
+function show(index){
+    chars[imgIndex].classList.remove('active');
+    pages[imgIndex].classList.remove('pageActive');
 
-function showSlide(index){
-    chars.forEach((char, i) => {
-        char.classList.toggle('active', i === index);
-        pages[i].classList.toggle('pageActive', i === index);
+    chars[index].classList.add('active');
+    pages[index].classList.add('pageActive');
+
+    imgIndex = index;
+}
+
+controls.forEach((e) => {
+    e.addEventListener('click', () => {
+        if(event.target.classList.contains('prev')){
+            let index = imgIndex - 1;
+
+            if(index < 0){
+                index = chars.length - 1;
+            }
+
+            show(index);
+        } else if(event.target.classList.contains('next')){
+            let index = imgIndex + 1;
+
+            if(index >= chars.length){
+                index = 0;
+            }
+            
+            show(index);
+        }
     })
-};
-
-pages.forEach((page, index)=>{
-    page.addEventListener('click', function(){
-        currentIndex = index;
-        showSlide(currentIndex);
-    });
 })
+
+show(imgIndex);
+
+
+
+
+// let currentIndex = 0;
+
+// function showSlide(index){
+//     chars.forEach((char, i) => {
+//         char.classList.toggle('active', i === index);
+//         pages[i].classList.toggle('pageActive', i === index);
+//     })
+// };
+
+// pages.forEach((page, index)=>{
+//     page.addEventListener('click', function(){
+//         currentIndex = index;
+//         showSlide(currentIndex);
+//     });
+// })
 
 
 
