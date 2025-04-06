@@ -22,663 +22,1275 @@ body{
     font-family: "Kurale", serif;
 }
 
-/* Общие свойства */
-.header, .mainScreen, .about, .characters, .media, .footer{
-    width: 100%;
-    border-bottom: 5px solid white;
+@media (max-width: 720px) {
+    
 }
-
-.header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainScreen, .about, .characters, .charInfo, .media, .blackFilter{
-    flex-direction: column;
-}
-
-.header, .footer{
-    background-color: black;
-}
-
-.abbreviation, .headerButtons, .headerBtn a, .charName p{
-    font-family: "PressStart2P", serif;
-}
-
-.abbreviation{
-    white-space: nowrap;
-    background-color: rgba(119, 119, 119, 0.5);
-    border: 5px solid white;
-    border-radius: 25px;
-    justify-content: center;
-    height: 80px;
-    margin-top: 20px;
-    font-size: 40px;
-    padding: 0 20px;
-    width: max-content;
-}
-
-.abbreviation p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    color: white;
-    font-size: 36px;
-}
-
-.blackFilter{
-    position: relative;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-
-
-
-/* главный блок */
-.main{
-    min-width: 1920px;
-    background-color: black;
-}
-
-
-
-
-
-/* хэдэр */
-.header{
-    height: 100px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.headerImg img{
-    width: 100%;
-    height: 100%;
-}
-
-.headerButtons{
-    gap: 21px;
-}
-
-.headerBtn{
-    height: 60px;
-    background-color: gray;
-    border: 5px solid white;
-    border-radius: 25px;
-    align-items: center;
-    padding: 0 20px;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    transition: all 0.5s ease;
-}
-
-
-/* ховер кнопок */
-.headerBtn:nth-child(1):hover{
-    background-color: #66CD99;
-    box-shadow: 0 0 3px 3px #66CD99;
-}
-
-.headerBtn:nth-child(2):hover{
-    background-color: #FF6666;
-    box-shadow: 0 0 3px 3px #FF6666;
-}
-
-.headerBtn:nth-child(3):hover{
-    background-color: #6A9EFF;
-    box-shadow: 0 0 3px 3px #6A9EFF;
-}
-
-.headerBtn:nth-child(4):hover{
-    background-color: #FFDA37;
-    box-shadow: 0 0 3px 3px #FFDA37;
-}
-
-/* ховер ссылок */
-/* .headerBtn:nth-child(1) p:hover{
-    color: #1E9033;
-}
-
-.headerBtn:nth-child(2) p:hover{
-    color: #FF0004;
-}
-
-.headerBtn:nth-child(3) p:hover{
-    color: #6560FF;
-}
-
-.headerBtn:nth-child(4) p:hover{
-    color: #FF6A00;
-} */
-
-
-
-
-
-/* первый блок (главный экран)*/
-.mainScreen{
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.video{
-    z-index: 0;
-    position: absolute;
-}
-
-.contentWrap{
-    position: relative;
-    display: flex;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.3);
-    flex-direction: column;
-    align-items: center;
-}
-
-.mainScreenImg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 200px 0;
-    animation: tilt 1.5s infinite;
-}
-
-@keyframes tilt{
-    0%{
+@media (min-width: 721px) and (max-width: 1023px) {   
+    .header, .mainScreen, .about, .characters, .media, .footer{
+        width: 100%;
+        border-bottom: 5px solid white;
+    }
+    
+    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mainScreen, .about, .characters, .charInfo, .media, .blackFilter{
+        flex-direction: column;
+    }
+    
+    .header, .footer{
+        background-color: black;
+    }
+    
+    .abbreviation, .headerButtons, .headerBtn a, .charName p{
+        font-family: "PressStart2P", serif;
+    }
+    
+    .abbreviation{
+        white-space: nowrap;
+        background-color: rgba(119, 119, 119, 0.5);
+        border: 5px solid white;
+        border-radius: 25px;
+        justify-content: center;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 40px;
+        padding: 0 20px;
+        width: max-content;
+    }
+    
+    .abbreviation p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        color: white;
+        font-size: 36px;
+    }
+    
+    .blackFilter{
+        position: relative;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    
+    
+    
+    
+    /* главный блок */
+    .main{
+        font-size: 16px;
+        min-width: 1920px;
+        background-color: black;
+    }
+    
+    
+    
+    
+    
+    /* хэдэр */
+    .header{
+        height: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .headerImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .headerButtons{
+        gap: 21px;
+    }
+    
+    .headerBtn{
+        font-size: 18px;
+        height: 2em;
+        background-color: gray;
+        border: 0.225em solid white;
+        border-radius: 25px;
+        align-items: center;
+        padding: 0 0.8em;
+        cursor: pointer;
+        color: white;
+        transition: all 0.5s ease;
+    }
+    
+    
+    /* ховер кнопок */
+    .headerBtn:nth-child(1):hover{
+        background-color: #66CD99;
+        box-shadow: 0 0 3px 3px #66CD99;
+    }
+    
+    .headerBtn:nth-child(2):hover{
+        background-color: #FF6666;
+        box-shadow: 0 0 3px 3px #FF6666;
+    }
+    
+    .headerBtn:nth-child(3):hover{
+        background-color: #6A9EFF;
+        box-shadow: 0 0 3px 3px #6A9EFF;
+    }
+    
+    .headerBtn:nth-child(4):hover{
+        background-color: #FFDA37;
+        box-shadow: 0 0 3px 3px #FFDA37;
+    }
+    
+    /* ховер ссылок */
+    /* .headerBtn:nth-child(1) p:hover{
+        color: #1E9033;
+    }
+    
+    .headerBtn:nth-child(2) p:hover{
+        color: #FF0004;
+    }
+    
+    .headerBtn:nth-child(3) p:hover{
+        color: #6560FF;
+    }
+    
+    .headerBtn:nth-child(4) p:hover{
+        color: #FF6A00;
+    } */
+    
+    
+    
+    
+    
+    /* первый блок (главный экран)*/
+    .mainScreen{
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    .video{
+        z-index: 0;
+        position: absolute;
+    }
+    
+    .contentWrap{
+        position: relative;
+        display: flex;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mainScreenImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 200px 0;
+        animation: tilt 1.5s infinite;
+    }
+    
+    @keyframes tilt{
+        0%{
+            transform: rotate(-5deg);
+        }
+        50%{
+            transform: rotate(5deg);
+        }
+        100%{
+            transform: rotate(-5deg);
+        }
+    }
+    
+    .mainScreenImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .buyButtons{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+    
+    .buyBtn{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 120px;
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 33px;
+        text-decoration: none;
+        color: black;
+        font-family: 'PressStart2P';
+        background-color: gray;
+        border: 5px solid white;
+        transition: all 0.5s ease;
+    }
+    
+    .buyBtnText{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    /* .buyBtnShadow{
+        box-shadow: 0 0 5px 5px red;
+    } */
+    
+    /* .buyBtn:nth-child(1){
+        background-color: #FF5558;
+        border: 5px solid red;
+        transition: all 0.5s ease;
+    } */
+    
+    .buyBtn:nth-child(1):hover{
+        background-color: #66CD99;
+        box-shadow: 0 0 10px 10px #66CD99;
+    }
+    
+    /* .buyBtn:nth-child(2){
+        background-color: #68FE4A;
+        border: 5px solid rgb(2, 177, 2);
+        transition: all 0.5s ease;
+    } */
+    
+    .buyBtn:nth-child(2):hover{
+        background-color: #FF6666;
+        box-shadow: 0 0 10px 10px #FF6666;
+    }
+    
+    /* .buyBtn:nth-child(3){
+        background-color: #AB87FF;
+        border: 5px solid #6560FF;
+        transition: all 0.5s ease;
+    } */
+    
+    .buyBtn:nth-child(3):hover{
+        background-color: #6A9EFF;
+        box-shadow: 0 0 10px 10px #6A9EFF;
+    }
+    
+    
+    
+    
+    
+    /* второй блок (об игре)*/
+    .about{
+        background-image: url(./images/CornBackg.png);
+        background-repeat: no-repeat;
+    }
+    
+    .aboutContent{
+        background-color: #6A9EFF;
+        border: 5px solid white;
+        margin: 64px 0;
+        padding: 5px;
+        gap: 10px;
+        border-radius: 25px;
+    }
+    
+    .left{
+        height: 495px;
+        border-radius: 25px;
+    }
+    
+    .left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .right{
+        width: 984px;   
+        background-color: white;
+        border-radius: 25px;
+        padding: 30px;
+    }
+    
+    .right p{
+        text-align: center;
+        margin: 0;
+        font-size: 42px;
+    }
+    
+    .bottomAboutImg{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .imgPart{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+    }
+    
+    .imgPart:hover{
+        filter: grayscale(0%);
+    }
+    
+    .imgPart img{
+        height: 100%;
+        transition: transform 0.5s ease;
+    }
+    
+    .imgPart:hover img{
+        transform: translateY(-100px);
+    }
+    
+    /* .jumping{
+        transform: translateY(-100px);
+    } */
+    
+    
+    
+    
+    
+    /* третий блок (карточки)*/
+    /* .characters{
+        background-image: url(./images/greenKnightBackg.png);
+        background-repeat: no-repeat;
+    } */
+    
+    .card{
+        margin: 77px 0;
+    }
+    
+    .prev, .next{
+        background-color: #D9D9D9;
+        width: 90px;
+        height: 90px;
+        border: 5px solid white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .prev{
+        margin-right: 30px;
+    }
+    
+    .next{
+        margin-left: 30px;
+    }
+    
+    .prev:hover, .next:hover{
+        border-color: #626262;
+    }
+    
+    .slideBtnElem{
+        width: 54px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+    
+    .prev:hover .slideBtnElem, .next:hover .slideBtnElem{
+       background-color: #626262; 
+    }
+    
+    .prev .slideBtnElem:nth-child(1){
+        transform: rotate(133.3deg);
+        top: 25px;
+    }
+    
+    .prev .slideBtnElem:nth-child(2){
+        transform: rotate(-136.86deg);
+        top: 57px;
+    }
+    
+    
+    
+    .next .slideBtnElem:nth-child(1){
+        transform: rotate(-133.3deg);
+        top: 25px;
+    }
+    
+    .next .slideBtnElem:nth-child(2){
+        transform: rotate(136.86deg);
+        top: 57px;
+    }
+    
+    .char{
+        display: none;
+        width: 1577px;
+        height: 688px;
+        border: 5px solid black;
+        border-radius: 25px;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .char:nth-child(1){
+        background: linear-gradient(24deg, #43004E, #E644FE, #862096, #000000);
+    }
+    
+    .char:nth-child(2){
+        background: linear-gradient(24deg, #C0C004, #FFFF00, #797900, #000000);
+    }
+    
+    .char:nth-child(3){
+        background: linear-gradient(24deg, #7A7A7A, #B1B1B1, #8D8D8D, #000000);
+    }
+    
+    .char:nth-child(4){
+        background: linear-gradient(24deg, #461919, #EB5C5C, #8F1D1D, #000000);
+    }
+    
+    .char:nth-child(5){
+        background: linear-gradient(24deg, #353535, #ffffff, #777777, #000000);
+    }
+    
+    
+    .char:nth-child(1) .charName{
+        background-color: #E644FE;
+    }
+    
+    .char:nth-child(2) .charName{
+        background-color: #FFFF00;
+    }
+    
+    .char:nth-child(3) .charName{
+        background-color: #ADADAD;
+    }
+    
+    .char:nth-child(4) .charName{
+        background-color: #BA3434;
+    }
+    
+    .char:nth-child(5) .charName{
+        background-color: #E8E8E8;
+    }
+    
+    .active{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        opacity: 1;
+    }
+    
+    .charImg{
+        margin-right: 30px;
+    }
+    
+    .charImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .story{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .charInfo{
+        width: 1000px;
+        background-color: white;
+        border-radius: 25px;
+    }
+    
+    .charInfo p{
+        font-size: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        height: 400px;
+        padding: 25px 15px;
+    }
+    
+    .charName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+        border: 5px solid black;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+    
+    .charName p{
+        text-align: center;
+        font-size: 64px;
+        margin: 0;
+    }
+    
+    .pages{
+        position: relative;
+        top: -88px;
+        right: -930px;
+        width: 215px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .cardNum{
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        border: 5px solid white;
+        background-color: white;
+    }
+    
+    .pageActive:nth-child(1){
+        background-color: #E644FE;
+    }
+    
+    .pageActive:nth-child(2){
+        background-color: #FFFF00;
+    }
+    
+    .pageActive:nth-child(3){
+        background-color: #ADADAD;
+    }
+    
+    .pageActive:nth-child(4){
+        background-color: #BA3434;
+    }
+    
+    .pageActive:nth-child(5){
+        background-color: #E8E8E8;
+    }
+    
+    
+    
+    
+    /* четвёртый блок (медиа) */
+    .media{
+        background-image: url(./images/MediaBackg.png);
+        background-repeat: no-repeat;
+    }
+    
+    .imagesMedia{
+        margin: 30px 0;
+    }
+    
+    .imagesTop{
+        gap: 100px;
+    }
+    
+    .imagesBottom{
+        margin: 20px 0;
+        gap: 70px;
+    }
+    
+    .imgMedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        border-radius: 25px;
+        transition: all 0.5s ease;
+    }
+    
+    .imgMedia img{
+        width: 100%;    
+        height: 100%;
+        border-radius: 25px;
+    }
+    
+    .imgMedia:hover{
+        box-shadow: 0 0 10px 10px #6A9EFF;
+    }
+    
+    .imagesTop .imgMedia:nth-child(1){
+        transform: rotate(-7deg);
+    }
+    
+    .imagesTop .imgMedia:nth-child(3){
+        transform: rotate(7deg);
+    }
+    
+    .imagesBottom .imgMedia:nth-child(1){
         transform: rotate(-5deg);
     }
-    50%{
+    
+    .imagesBottom .imgMedia:nth-child(2){
         transform: rotate(5deg);
     }
-    100%{
-        transform: rotate(-5deg);
+    
+    .imgMediaGif{
+        width: 300px;
+    }
+    
+    .imgMediaGif img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    /* футер */
+    .footer{
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footerLogo img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logos{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .support p{
+        text-align: center;
+        font-size: 20px;
+        color: white;
     }
 }
-
-.mainScreenImg img{
-    width: 100%;
-    height: 100%;
+@media (min-width: 1024px) {
+    .header, .mainScreen, .about, .characters, .media, .footer{
+        width: 100%;
+        border-bottom: 5px solid white;
+    }
+    
+    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mainScreen, .about, .characters, .charInfo, .media, .blackFilter{
+        flex-direction: column;
+    }
+    
+    .header, .footer{
+        background-color: black;
+    }
+    
+    .abbreviation, .headerButtons, .headerBtn a, .charName p{
+        font-family: "PressStart2P", serif;
+    }
+    
+    .abbreviation{
+        white-space: nowrap;
+        background-color: rgba(119, 119, 119, 0.5);
+        border: 5px solid white;
+        border-radius: 25px;
+        justify-content: center;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 40px;
+        padding: 0 20px;
+        width: max-content;
+    }
+    
+    .abbreviation p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        color: white;
+        font-size: 36px;
+    }
+    
+    .blackFilter{
+        position: relative;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    
+    
+    
+    
+    /* главный блок */
+    .main{
+        font-size: 16px;
+        min-width: 1920px;
+        background-color: black;
+    }
+    
+    
+    
+    
+    
+    /* хэдэр */
+    .header{
+        height: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .headerImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .headerButtons{
+        gap: 21px;
+    }
+    
+    .headerBtn{
+        font-size: 24px;
+        height: 2em;
+        background-color: gray;
+        border: 0.225em solid white;
+        border-radius: 25px;
+        align-items: center;
+        padding: 0 0.8em;
+        cursor: pointer;
+        color: white;
+        transition: all 0.5s ease;
+    }
+    
+    
+    /* ховер кнопок */
+    .headerBtn:nth-child(1):hover{
+        background-color: #66CD99;
+        box-shadow: 0 0 3px 3px #66CD99;
+    }
+    
+    .headerBtn:nth-child(2):hover{
+        background-color: #FF6666;
+        box-shadow: 0 0 3px 3px #FF6666;
+    }
+    
+    .headerBtn:nth-child(3):hover{
+        background-color: #6A9EFF;
+        box-shadow: 0 0 3px 3px #6A9EFF;
+    }
+    
+    .headerBtn:nth-child(4):hover{
+        background-color: #FFDA37;
+        box-shadow: 0 0 3px 3px #FFDA37;
+    }
+    
+    /* ховер ссылок */
+    /* .headerBtn:nth-child(1) p:hover{
+        color: #1E9033;
+    }
+    
+    .headerBtn:nth-child(2) p:hover{
+        color: #FF0004;
+    }
+    
+    .headerBtn:nth-child(3) p:hover{
+        color: #6560FF;
+    }
+    
+    .headerBtn:nth-child(4) p:hover{
+        color: #FF6A00;
+    } */
+    
+    
+    
+    
+    
+    /* первый блок (главный экран)*/
+    .mainScreen{
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    .video{
+        z-index: 0;
+        position: absolute;
+    }
+    
+    .contentWrap{
+        position: relative;
+        display: flex;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mainScreenImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 200px 0;
+        animation: tilt 1.5s infinite;
+    }
+    
+    @keyframes tilt{
+        0%{
+            transform: rotate(-5deg);
+        }
+        50%{
+            transform: rotate(5deg);
+        }
+        100%{
+            transform: rotate(-5deg);
+        }
+    }
+    
+    .mainScreenImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .buyButtons{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+    
+    .buyBtn{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 120px;
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 33px;
+        text-decoration: none;
+        color: black;
+        font-family: 'PressStart2P';
+        background-color: gray;
+        border: 5px solid white;
+        transition: all 0.5s ease;
+    }
+    
+    .buyBtnText{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    /* .buyBtnShadow{
+        box-shadow: 0 0 5px 5px red;
+    } */
+    
+    /* .buyBtn:nth-child(1){
+        background-color: #FF5558;
+        border: 5px solid red;
+        transition: all 0.5s ease;
+    } */
+    
+    .buyBtn:nth-child(1):hover{
+        background-color: #66CD99;
+        box-shadow: 0 0 10px 10px #66CD99;
+    }
+    
+    /* .buyBtn:nth-child(2){
+        background-color: #68FE4A;
+        border: 5px solid rgb(2, 177, 2);
+        transition: all 0.5s ease;
+    } */
+    
+    .buyBtn:nth-child(2):hover{
+        background-color: #FF6666;
+        box-shadow: 0 0 10px 10px #FF6666;
+    }
+    
+    /* .buyBtn:nth-child(3){
+        background-color: #AB87FF;
+        border: 5px solid #6560FF;
+        transition: all 0.5s ease;
+    } */
+    
+    .buyBtn:nth-child(3):hover{
+        background-color: #6A9EFF;
+        box-shadow: 0 0 10px 10px #6A9EFF;
+    }
+    
+    
+    
+    
+    
+    /* второй блок (об игре)*/
+    .about{
+        background-image: url(./images/CornBackg.png);
+        background-repeat: no-repeat;
+    }
+    
+    .aboutContent{
+        background-color: #6A9EFF;
+        border: 5px solid white;
+        margin: 64px 0;
+        padding: 5px;
+        gap: 10px;
+        border-radius: 25px;
+    }
+    
+    .left{
+        height: 495px;
+        border-radius: 25px;
+    }
+    
+    .left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .right{
+        width: 984px;   
+        background-color: white;
+        border-radius: 25px;
+        padding: 30px;
+    }
+    
+    .right p{
+        text-align: center;
+        margin: 0;
+        font-size: 42px;
+    }
+    
+    .bottomAboutImg{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .imgPart{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+    }
+    
+    .imgPart:hover{
+        filter: grayscale(0%);
+    }
+    
+    .imgPart img{
+        height: 100%;
+        transition: transform 0.5s ease;
+    }
+    
+    .imgPart:hover img{
+        transform: translateY(-100px);
+    }
+    
+    /* .jumping{
+        transform: translateY(-100px);
+    } */
+    
+    
+    
+    
+    
+    /* третий блок (карточки)*/
+    /* .characters{
+        background-image: url(./images/greenKnightBackg.png);
+        background-repeat: no-repeat;
+    } */
+    
+    .card{
+        margin: 77px 0;
+    }
+    
+    .prev, .next{
+        background-color: #D9D9D9;
+        width: 90px;
+        height: 90px;
+        border: 5px solid white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .prev{
+        margin-right: 30px;
+    }
+    
+    .next{
+        margin-left: 30px;
+    }
+    
+    .prev:hover, .next:hover{
+        border-color: #626262;
+    }
+    
+    .slideBtnElem{
+        width: 54px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+    
+    .prev:hover .slideBtnElem, .next:hover .slideBtnElem{
+       background-color: #626262; 
+    }
+    
+    .prev .slideBtnElem:nth-child(1){
+        transform: rotate(133.3deg);
+        top: 25px;
+    }
+    
+    .prev .slideBtnElem:nth-child(2){
+        transform: rotate(-136.86deg);
+        top: 57px;
+    }
+    
+    
+    
+    .next .slideBtnElem:nth-child(1){
+        transform: rotate(-133.3deg);
+        top: 25px;
+    }
+    
+    .next .slideBtnElem:nth-child(2){
+        transform: rotate(136.86deg);
+        top: 57px;
+    }
+    
+    .char{
+        display: none;
+        width: 1577px;
+        height: 688px;
+        border: 5px solid black;
+        border-radius: 25px;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .char:nth-child(1){
+        background: linear-gradient(24deg, #43004E, #E644FE, #862096, #000000);
+    }
+    
+    .char:nth-child(2){
+        background: linear-gradient(24deg, #C0C004, #FFFF00, #797900, #000000);
+    }
+    
+    .char:nth-child(3){
+        background: linear-gradient(24deg, #7A7A7A, #B1B1B1, #8D8D8D, #000000);
+    }
+    
+    .char:nth-child(4){
+        background: linear-gradient(24deg, #461919, #EB5C5C, #8F1D1D, #000000);
+    }
+    
+    .char:nth-child(5){
+        background: linear-gradient(24deg, #353535, #ffffff, #777777, #000000);
+    }
+    
+    
+    .char:nth-child(1) .charName{
+        background-color: #E644FE;
+    }
+    
+    .char:nth-child(2) .charName{
+        background-color: #FFFF00;
+    }
+    
+    .char:nth-child(3) .charName{
+        background-color: #ADADAD;
+    }
+    
+    .char:nth-child(4) .charName{
+        background-color: #BA3434;
+    }
+    
+    .char:nth-child(5) .charName{
+        background-color: #E8E8E8;
+    }
+    
+    .active{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        opacity: 1;
+    }
+    
+    .charImg{
+        margin-right: 30px;
+    }
+    
+    .charImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .story{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .charInfo{
+        width: 1000px;
+        background-color: white;
+        border-radius: 25px;
+    }
+    
+    .charInfo p{
+        font-size: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        height: 400px;
+        padding: 25px 15px;
+    }
+    
+    .charName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+        border: 5px solid black;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+    
+    .charName p{
+        text-align: center;
+        font-size: 64px;
+        margin: 0;
+    }
+    
+    .pages{
+        position: relative;
+        top: -88px;
+        right: -930px;
+        width: 215px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .cardNum{
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        border: 5px solid white;
+        background-color: white;
+    }
+    
+    .pageActive:nth-child(1){
+        background-color: #E644FE;
+    }
+    
+    .pageActive:nth-child(2){
+        background-color: #FFFF00;
+    }
+    
+    .pageActive:nth-child(3){
+        background-color: #ADADAD;
+    }
+    
+    .pageActive:nth-child(4){
+        background-color: #BA3434;
+    }
+    
+    .pageActive:nth-child(5){
+        background-color: #E8E8E8;
+    }
+    
+    
+    
+    
+    /* четвёртый блок (медиа) */
+    .media{
+        background-image: url(./images/MediaBackg.png);
+        background-repeat: no-repeat;
+    }
+    
+    .imagesMedia{
+        margin: 30px 0;
+    }
+    
+    .imagesTop{
+        gap: 100px;
+    }
+    
+    .imagesBottom{
+        margin: 20px 0;
+        gap: 70px;
+    }
+    
+    .imgMedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        border-radius: 25px;
+        transition: all 0.5s ease;
+    }
+    
+    .imgMedia img{
+        width: 100%;    
+        height: 100%;
+        border-radius: 25px;
+    }
+    
+    .imgMedia:hover{
+        box-shadow: 0 0 10px 10px #6A9EFF;
+    }
+    
+    .imagesTop .imgMedia:nth-child(1){
+        transform: rotate(-7deg);
+    }
+    
+    .imagesTop .imgMedia:nth-child(3){
+        transform: rotate(7deg);
+    }
+    
+    .imagesBottom .imgMedia:nth-child(1){
+        transform: rotate(-5deg);
+    }
+    
+    .imagesBottom .imgMedia:nth-child(2){
+        transform: rotate(5deg);
+    }
+    
+    .imgMediaGif{
+        width: 300px;
+    }
+    
+    .imgMediaGif img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    
+    /* футер */
+    .footer{
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footerLogo img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logos{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .support p{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
 }
-
-.buyButtons{
-    width: 100%;
-    margin-bottom: 20px;
-    justify-content: space-around;
-}
-
-.buyBtn{
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 120px;
-    border-radius: 25px;
-    padding: 15px;
-    font-size: 33px;
-    text-decoration: none;
-    color: black;
-    font-family: 'PressStart2P';
-    background-color: gray;
-    border: 5px solid white;
-    transition: all 0.5s ease;
-}
-
-.buyBtnText{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-/* .buyBtnShadow{
-    box-shadow: 0 0 5px 5px red;
-} */
-
-/* .buyBtn:nth-child(1){
-    background-color: #FF5558;
-    border: 5px solid red;
-    transition: all 0.5s ease;
-} */
-
-.buyBtn:nth-child(1):hover{
-    background-color: #66CD99;
-    box-shadow: 0 0 10px 10px #66CD99;
-}
-
-/* .buyBtn:nth-child(2){
-    background-color: #68FE4A;
-    border: 5px solid rgb(2, 177, 2);
-    transition: all 0.5s ease;
-} */
-
-.buyBtn:nth-child(2):hover{
-    background-color: #FF6666;
-    box-shadow: 0 0 10px 10px #FF6666;
-}
-
-/* .buyBtn:nth-child(3){
-    background-color: #AB87FF;
-    border: 5px solid #6560FF;
-    transition: all 0.5s ease;
-} */
-
-.buyBtn:nth-child(3):hover{
-    background-color: #6A9EFF;
-    box-shadow: 0 0 10px 10px #6A9EFF;
-}
-
-
-
-
-
-/* второй блок (об игре)*/
-.about{
-    background-image: url(./images/CornBackg.png);
-    background-repeat: no-repeat;
-}
-
-.aboutContent{
-    background-color: #6A9EFF;
-    border: 5px solid white;
-    margin: 64px 0;
-    padding: 5px;
-    gap: 10px;
-    border-radius: 25px;
-}
-
-.left{
-    height: 495px;
-    border-radius: 25px;
-}
-
-.left img{
-    width: 100%;
-    height: 100%;
-}
-
-.right{
-    width: 984px;   
-    background-color: white;
-    border-radius: 25px;
-    padding: 30px;
-}
-
-.right p{
-    text-align: center;
-    margin: 0;
-    font-size: 42px;
-}
-
-.bottomAboutImg{
-    display: flex;
-    flex-direction: row;
-}
-
-.imgPart{
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    transition: transform 5s ease;
-}
-
-.imgPart:hover{
-    filter: grayscale(0%);
-}
-
-.imgPart img{
-    height: 100%;
-    transition: transform 0.5s ease;
-}
-
-.imgPart:hover img{
-    transform: translateY(-100px);
-}
-
-/* .jumping{
-    transform: translateY(-100px);
-} */
-
-
-
-
-
-/* третий блок (карточки)*/
-/* .characters{
-    background-image: url(./images/greenKnightBackg.png);
-    background-repeat: no-repeat;
-} */
-
-.card{
-    margin: 77px 0;
-}
-
-.prev, .next{
-    background-color: #D9D9D9;
-    width: 90px;
-    height: 90px;
-    border: 5px solid white;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.prev{
-    margin-right: 30px;
-}
-
-.next{
-    margin-left: 30px;
-}
-
-.prev:hover, .next:hover{
-    border-color: #626262;
-}
-
-.slideBtnElem{
-    width: 54px;
-    height: 10px;
-    background-color: white;
-    position: absolute;
-}
-
-.prev:hover .slideBtnElem, .next:hover .slideBtnElem{
-   background-color: #626262; 
-}
-
-.prev .slideBtnElem:nth-child(1){
-    transform: rotate(133.3deg);
-    top: 25px;
-}
-
-.prev .slideBtnElem:nth-child(2){
-    transform: rotate(-136.86deg);
-    top: 57px;
-}
-
-
-
-.next .slideBtnElem:nth-child(1){
-    transform: rotate(-133.3deg);
-    top: 25px;
-}
-
-.next .slideBtnElem:nth-child(2){
-    transform: rotate(136.86deg);
-    top: 57px;
-}
-
-.char{
-    display: none;
-    width: 1577px;
-    height: 688px;
-    border: 5px solid black;
-    border-radius: 25px;
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.char:nth-child(1){
-    background: linear-gradient(24deg, #43004E, #E644FE, #862096, #000000);
-}
-
-.char:nth-child(2){
-    background: linear-gradient(24deg, #C0C004, #FFFF00, #797900, #000000);
-}
-
-.char:nth-child(3){
-    background: linear-gradient(24deg, #7A7A7A, #B1B1B1, #8D8D8D, #000000);
-}
-
-.char:nth-child(4){
-    background: linear-gradient(24deg, #461919, #EB5C5C, #8F1D1D, #000000);
-}
-
-.char:nth-child(5){
-    background: linear-gradient(24deg, #353535, #ffffff, #777777, #000000);
-}
-
-
-.char:nth-child(1) .charName{
-    background-color: #E644FE;
-}
-
-.char:nth-child(2) .charName{
-    background-color: #FFFF00;
-}
-
-.char:nth-child(3) .charName{
-    background-color: #ADADAD;
-}
-
-.char:nth-child(4) .charName{
-    background-color: #BA3434;
-}
-
-.char:nth-child(5) .charName{
-    background-color: #E8E8E8;
-}
-
-.active{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    opacity: 1;
-}
-
-.charImg{
-    margin-right: 30px;
-}
-
-.charImg img{
-    width: 100%;
-    height: 100%;
-}
-
-.story{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.charInfo{
-    width: 1000px;
-    background-color: white;
-    border-radius: 25px;
-}
-
-.charInfo p{
-    font-size: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    height: 400px;
-    padding: 25px 15px;
-}
-
-.charName{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-    border: 5px solid black;
-    border-radius: 25px;
-    box-sizing: border-box;
-}
-
-.charName p{
-    text-align: center;
-    font-size: 64px;
-    margin: 0;
-}
-
-.pages{
-    position: relative;
-    top: -88px;
-    right: -930px;
-    width: 215px;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.cardNum{
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-    border: 5px solid white;
-    background-color: white;
-}
-
-.pageActive:nth-child(1){
-    background-color: #E644FE;
-}
-
-.pageActive:nth-child(2){
-    background-color: #FFFF00;
-}
-
-.pageActive:nth-child(3){
-    background-color: #ADADAD;
-}
-
-.pageActive:nth-child(4){
-    background-color: #BA3434;
-}
-
-.pageActive:nth-child(5){
-    background-color: #E8E8E8;
-}
-
-
-
-
-/* четвёртый блок (медиа) */
-.media{
-    background-image: url(./images/MediaBackg.png);
-    background-repeat: no-repeat;
-}
-
-.imagesMedia{
-    margin: 30px 0;
-}
-
-.imagesTop{
-    gap: 100px;
-}
-
-.imagesBottom{
-    margin: 20px 0;
-    gap: 70px;
-}
-
-.imgMedia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    border-radius: 25px;
-    transition: all 0.5s ease;
-}
-
-.imgMedia img{
-    width: 100%;    
-    height: 100%;
-    border-radius: 25px;
-}
-
-.imgMedia:hover{
-    box-shadow: 0 0 10px 10px #6A9EFF;
-}
-
-.imagesTop .imgMedia:nth-child(1){
-    transform: rotate(-7deg);
-}
-
-.imagesTop .imgMedia:nth-child(3){
-    transform: rotate(7deg);
-}
-
-.imagesBottom .imgMedia:nth-child(1){
-    transform: rotate(-5deg);
-}
-
-.imagesBottom .imgMedia:nth-child(2){
-    transform: rotate(5deg);
-}
-
-.imgMediaGif{
-    width: 300px;
-}
-
-.imgMediaGif img{
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-/* футер */
-.footer{
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footerLogo img{
-    width: 100%;
-    height: 100%;
-}
-
-.logos{
-    align-items: center;
-    justify-content: center;
-}
-
-.support p{
-    text-align: center;
-    font-size: 20px;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
