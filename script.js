@@ -76,7 +76,7 @@ function show(index){
 
 controls.forEach((e) => {
     e.addEventListener('click', () => {
-        if(event.target.classList.contains('prevBtn')){
+        if(event.target.classList.contains('prev')){
             let index = imgIndex - 1;
 
             if(index < 0){
