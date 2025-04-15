@@ -74,9 +74,33 @@ function show(index){
     imgIndex = index;
 }
 
+// controls.forEach((e) => {
+//     e.addEventListener('click', () => {
+//         if(event.target.classList.contains('prev')){
+//             let index = imgIndex - 1;
+
+//             if(index < 0){
+//                 index = chars.length - 1;
+//             }
+
+//             show(index);
+//         } else if(event.target.classList.contains('next')){
+//             let index = imgIndex + 1;
+
+//             if(index >= chars.length){
+//                 index = 0;
+//             }
+            
+//             show(index);
+//         }
+//     })
+// })
+
 controls.forEach((e) => {
     e.addEventListener('click', () => {
-        if(event.target.classList.contains('prev')){
+        const isPrev = event.currentTarget.classList.contains('prev');
+        const isNext = event.currentTarget.classList.contains('next');
+        if(isPrev){
             let index = imgIndex - 1;
 
             if(index < 0){
@@ -84,7 +108,7 @@ controls.forEach((e) => {
             }
 
             show(index);
-        } else if(event.target.classList.contains('next')){
+        } else if(isNext){
             let index = imgIndex + 1;
 
             if(index >= chars.length){
