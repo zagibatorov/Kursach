@@ -1,4 +1,4 @@
-//Переходы по блокам по кнопкам в хедере
+//Переходы к блокам по кнопкам в хедере
 
 let toAbout = document.getElementById('toAbout');
 let toChar = document.getElementById('toChar');
@@ -73,28 +73,6 @@ function show(index){
 
     imgIndex = index;
 }
-
-// controls.forEach((e) => {
-//     e.addEventListener('click', () => {
-//         if(event.target.classList.contains('prev')){
-//             let index = imgIndex - 1;
-
-//             if(index < 0){
-//                 index = chars.length - 1;
-//             }
-
-//             show(index);
-//         } else if(event.target.classList.contains('next')){
-//             let index = imgIndex + 1;
-
-//             if(index >= chars.length){
-//                 index = 0;
-//             }
-            
-//             show(index);
-//         }
-//     })
-// })
 
 controls.forEach((e) => {
     e.addEventListener('click', () => {
