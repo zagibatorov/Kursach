@@ -86,6 +86,7 @@ body{
     
     /* хэдэр */
     .header{
+        position: relative;
         height: 100px;
         align-items: center;
         justify-content: space-around;
@@ -143,6 +144,20 @@ body{
         height: 60px;
         background-color: #383838;
         border-radius: 10px;
+    }
+
+    .menuBurger:hover .headerButtonsMobile{
+        display: block;
+    }
+
+    .headerButtonsMobile{
+        display: none;
+        position: absolute;
+        background-color: yellow;
+        z-index: 1000;
+        top: 100px;
+        right: 0;
+        margin: 0;
     }
     
     
