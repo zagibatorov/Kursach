@@ -34,7 +34,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,18 +146,37 @@ body{
         border-radius: 10px;
     }
 
-    .menuBurger:hover .headerButtonsMobile{
-        display: block;
-    }
-
     .headerButtonsMobile{
-        display: none;
+        flex-direction: column;
         position: absolute;
-        background-color: yellow;
+        background-color: #383838;
         z-index: 1000;
         top: 100px;
         right: 0;
         margin: 0;
+        gap: 20px;
+    }
+
+    .headerBtnMobile{
+        width: 100px;
+        height: 25px;
+        background-color: gray;
+        border-radius: 25px;
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    .headerBtnMobile p{
+        text-align: center;
+        margin: 0;
+    }
+
+    .headerBtnMobile:first-child{
+        margin-top: 20px;
+    }
+
+    .headerBtnMobile:last-child{
+        margin-bottom: 20px;
     }
     
     
@@ -647,7 +666,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -750,15 +769,46 @@ body{
         box-shadow: 0 0 3px 3px #FFDA37;
     }
     
-    .menuBurger {
+    .menuBurger{
         display: block;
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
         background-color: #383838;
         border-radius: 10px;
     }
-    
 
+    .headerButtonsMobile{
+        flex-direction: column;
+        position: absolute;
+        background-color: #383838;
+        z-index: 1000;
+        top: 100px;
+        right: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .headerBtnMobile{
+        width: 100px;
+        height: 25px;
+        background-color: gray;
+        border-radius: 25px;
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    .headerBtnMobile p{
+        text-align: center;
+        margin: 0;
+    }
+
+    .headerBtnMobile:first-child{
+        margin-top: 20px;
+    }
+
+    .headerBtnMobile:last-child{
+        margin-bottom: 20px;
+    }
 
 
 
@@ -1258,7 +1308,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1361,12 +1411,45 @@ body{
         box-shadow: 0 0 3px 3px #FFDA37;
     }
     
-    .menuBurger {
+    .menuBurger{
         display: block;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         background-color: #383838;
-        border-radius: 15px;
+        border-radius: 10px;
+    }
+
+    .headerButtonsMobile{
+        flex-direction: column;
+        position: absolute;
+        background-color: #383838;
+        z-index: 1000;
+        top: 100px;
+        right: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .headerBtnMobile{
+        width: 100px;
+        height: 25px;
+        background-color: gray;
+        border-radius: 25px;
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    .headerBtnMobile p{
+        text-align: center;
+        margin: 0;
+    }
+
+    .headerBtnMobile:first-child{
+        margin-top: 20px;
+    }
+
+    .headerBtnMobile:last-child{
+        margin-bottom: 20px;
     }
     
     

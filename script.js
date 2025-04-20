@@ -158,3 +158,17 @@ registerBtn.addEventListener('click', () => {
     window.location.href = "admin.html";
 })
 
+
+//Открытие меню-бургера
+
+// let burgerMenu = document.querySelector('.menuBurger');
+// let headerButtonsMobile = document.querySelector('.headerButtonsMobile');
+
+// burgerMenu.addEventListener('click', () => {
+//     if(headerButtonsMobile.style.display === 'none'){
+//         headerButtonsMobile.style.display = 'block';
+//     }
+//     else{
+//         headerButtonsMobile.style.display = 'none';
+//     }
+// })
