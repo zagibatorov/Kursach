@@ -34,7 +34,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons,  .buyBtn, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,7 +48,7 @@ body{
         background-color: black;
     }
     
-    .abbreviation, .headerButtons, .headerBtn a, .charName p{
+    .abbreviation, .headerButtons, .headerBtn a, .headerBtnMobile p, .charName p{
         font-family: "PressStart2P", serif;
     }
     
@@ -139,34 +139,47 @@ body{
     }
     
     .menuBurger{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 60px;
         height: 60px;
         background-color: #383838;
         border-radius: 10px;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .elem{
+        width: 40px;
+        height: 5px;
+        background-color: white;
+        border-radius: 25px;
     }
 
     .headerButtonsMobile{
+        display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #383838;
+        background-color: rgba(119, 119, 119, 0.9);
         z-index: 1000;
         top: 100px;
         right: 0;
         margin: 0;
-        gap: 20px;
+        gap: 15px;
     }
 
     .headerBtnMobile{
-        width: 100px;
-        height: 25px;
         background-color: gray;
         border-radius: 25px;
-        list-style-type: none;
-        padding: 5px;
+        padding: 7px;
+        margin: 0 10px;
+        border: 3px solid white;
     }
 
     .headerBtnMobile p{
+        font-size: 15px;
+        color: white;
         text-align: center;
         margin: 0;
     }
@@ -237,8 +250,6 @@ body{
     }
     
     .buyBtn{
-        display: flex;
-        justify-content: center;
         width: 250px;
         height: 80px;
         border-radius: 25px;
@@ -666,7 +677,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtn, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -680,7 +691,7 @@ body{
         background-color: black;
     }
     
-    .abbreviation, .headerButtons, .headerBtn a, .charName p{
+    .abbreviation, .headerButtons, .headerBtn a, .headerBtnMobile p, .charName p{
         font-family: "PressStart2P", serif;
     }
     
@@ -780,24 +791,25 @@ body{
     .headerButtonsMobile{
         flex-direction: column;
         position: absolute;
-        background-color: #383838;
+        background-color: rgba(119, 119, 119, 0.9);
         z-index: 1000;
         top: 100px;
         right: 0;
         margin: 0;
-        gap: 20px;
+        gap: 15px;
     }
 
     .headerBtnMobile{
-        width: 100px;
-        height: 25px;
         background-color: gray;
         border-radius: 25px;
-        list-style-type: none;
-        padding: 5px;
+        padding: 7px;
+        margin: 0 10px;
+        border: 3px solid white;
     }
 
     .headerBtnMobile p{
+        font-size: 15px;
+        color: white;
         text-align: center;
         margin: 0;
     }
@@ -870,8 +882,6 @@ body{
     }
     
     .buyBtn{
-        display: flex;
-        justify-content: center;
         width: 250px;
         height: 80px;
         border-radius: 25px;
@@ -917,8 +927,6 @@ body{
 
     /* второй блок (об игре)*/
     .about{
-        background-image: url(./images/CornBackg.png);
-        background-repeat: no-repeat;
         font-size: 15px;
     }
     
@@ -1195,8 +1203,6 @@ body{
     
     /* четвёртый блок (медиа) */
     .media{
-        background-image: url(./images/MediaBackg.png);
-        background-repeat: no-repeat;
         font-size: 16px;
     }
     
@@ -1308,7 +1314,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .headerButtonsMobile, .headerBtnMobile, .buyButtons, .buyBtn, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1322,7 +1328,7 @@ body{
         background-color: black;
     }
     
-    .abbreviation, .headerButtons, .headerBtn a, .charName p{
+    .abbreviation, .headerButtons, .headerBtn a, .headerBtnMobile p, .charName p{
         font-family: "PressStart2P", serif;
     }
     
@@ -1420,26 +1426,28 @@ body{
     }
 
     .headerButtonsMobile{
+        display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #383838;
+        background-color: rgba(119, 119, 119, 0.9);
         z-index: 1000;
         top: 100px;
         right: 0;
         margin: 0;
-        gap: 20px;
+        gap: 15px;
     }
 
     .headerBtnMobile{
-        width: 100px;
-        height: 25px;
         background-color: gray;
         border-radius: 25px;
-        list-style-type: none;
-        padding: 5px;
+        padding: 7px;
+        margin: 0 10px;
+        border: 3px solid white;
     }
 
     .headerBtnMobile p{
+        font-size: 15px;
+        color: white;
         text-align: center;
         margin: 0;
     }
@@ -1510,8 +1518,6 @@ body{
     }
     
     .buyBtn{
-        display: flex;
-        justify-content: center;
         width: 300px;
         height: 90px;
         border-radius: 25px;
@@ -1555,8 +1561,6 @@ body{
 
     /* второй блок (об игре)*/
     .about{
-        background-image: url(./images/CornBackg.png);
-        background-repeat: no-repeat;
         font-size: 15px;
     }
     
@@ -1630,8 +1634,8 @@ body{
     
     .prev, .next{
         background-color: #D9D9D9;
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
         border: 3px solid white;
         border-radius: 15px;
         display: flex;
@@ -1642,11 +1646,11 @@ body{
     }
     
     .prev{
-        margin-right: 5px;
+        margin-right: 10px;
     }
     
     .next{
-        margin-left: 5px;
+        margin-left: 10px;
     }
     
     .prev:hover, .next:hover{
@@ -1654,8 +1658,8 @@ body{
     }
     
     .slideBtnElem{
-        width: 25px;
-        height: 5px;
+        width: 27px;
+        height: 6px;
         background-color: white;
         position: absolute;
     }
@@ -1666,27 +1670,27 @@ body{
     
     .prev .slideBtnElem:nth-child(1){
         transform: rotate(133.3deg);
-        top: 15px;
+        top: 18px;
     }
     
     .prev .slideBtnElem:nth-child(2){
         transform: rotate(-136.86deg);
-        top: 30px;
+        top: 33px;
     }
     
     .next .slideBtnElem:nth-child(1){
         transform: rotate(-133.3deg);
-        top: 15px;
+        top: 18px;
     }
     
     .next .slideBtnElem:nth-child(2){
         transform: rotate(136.86deg);
-        top: 30px;
+        top: 33px;
     }
     
     .char{
         display: none;
-        width: 300px;
+        width: 325px;
         border-radius: 20px;
         opacity: 0;
         transition: all 1s ease;
@@ -1768,7 +1772,7 @@ body{
 
     .charText{
         display: flex;
-        height: 170px;
+        height: 200px;
     }
     
     .charText p {
@@ -1777,7 +1781,7 @@ body{
         align-items: center;
         text-align: center;
         margin: 0;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .charName{
@@ -1793,7 +1797,7 @@ body{
     
     .charName p{
         text-align: center;
-        font-size: 17px;
+        font-size: 20px;
         margin: 0;
     }
 
@@ -1833,8 +1837,6 @@ body{
     
     /* четвёртый блок (медиа) */
     .media{
-        background-image: url(./images/MediaBackg.png);
-        background-repeat: no-repeat;
         font-size: 16px;
     }
     
@@ -1864,7 +1866,7 @@ body{
     }
     
     .imgMedia img{
-        width: 23em;
+        width: 26em;
         height: 100%;
         border-radius: 25px;
     }
@@ -1929,7 +1931,7 @@ body{
         border-bottom: 5px solid white;
     }
     
-    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
+    .header, .headerButtons, .headerBtn, .buyButtons, .buyBtn, .buyBtnText, .blackFilter, .mainScreen, .abbreviation, .about, .aboutContent, .characters, .card, .charInfo, .pages, .media, .imagesTop, .imagesBottom, .footer, .logos{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1976,12 +1978,7 @@ body{
         background-color: rgba(0, 0, 0, 0.7);
     }
     
-    /* главный блок */
-    /* .main{
-        font-size: 16px;
-        min-width: 0px;
-        background-color: black;
-    } */
+
     
     /* хэдэр */
     .header{

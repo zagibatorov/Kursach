@@ -1,6 +1,6 @@
 //Переходы к блокам по кнопкам в хедере
 
-let toAbout = document.getElementById('toAbout');
+let toAbout = document.getElementById('toAboutt');
 let toChar = document.getElementById('toChar');
 let toMedia = document.getElementById('toMedia');
 let toFooter = document.getElementById('toFooter');
@@ -10,6 +10,7 @@ let charBlock = document.getElementById('charBlock');
 let mediaBlock = document.getElementById('mediaBlock');
 let footer = document.getElementById('footer');
 
+console.log(toAbout);
 
 toAbout.addEventListener('click', () => {
     aboutBlock.scrollIntoView({
@@ -161,14 +162,14 @@ registerBtn.addEventListener('click', () => {
 
 //Открытие меню-бургера
 
-// let burgerMenu = document.querySelector('.menuBurger');
-// let headerButtonsMobile = document.querySelector('.headerButtonsMobile');
+let burgerMenu = document.querySelector('.menuBurger');
+let headerButtonsMobile = document.querySelector('.headerButtonsMobile');
 
-// burgerMenu.addEventListener('click', () => {
-//     if(headerButtonsMobile.style.display === 'none'){
-//         headerButtonsMobile.style.display = 'block';
-//     }
-//     else{
-//         headerButtonsMobile.style.display = 'none';
-//     }
-// })
+burgerMenu.addEventListener('click', () => {
+    if(headerButtonsMobile.style.display === 'none'){
+        headerButtonsMobile.style.display = 'flex';
+    }
+    else{
+        headerButtonsMobile.style.display = 'none';
+    }
+})
