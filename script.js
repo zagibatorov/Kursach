@@ -1,6 +1,6 @@
 //Переходы к блокам по кнопкам в хедере
 
-let toAbout = document.getElementById('toAboutt');
+let toAbout = document.getElementById('toAbout');
 let toChar = document.getElementById('toChar');
 let toMedia = document.getElementById('toMedia');
 let toFooter = document.getElementById('toFooter');
@@ -10,7 +10,6 @@ let charBlock = document.getElementById('charBlock');
 let mediaBlock = document.getElementById('mediaBlock');
 let footer = document.getElementById('footer');
 
-console.log(toAbout);
 
 toAbout.addEventListener('click', () => {
     aboutBlock.scrollIntoView({
@@ -125,18 +124,21 @@ show(imgIndex);
 
 //Увеличение кнопок в первом блоке
 
-// let buyButtons = document.querySelectorAll('.buyBtn');
+// let imgsMedia = document.querySelectorAll('.imgMedia');
 
-// buyButtons.forEach(buyBtn => {
-//     buyBtn.addEventListener('mouseover', () => {
-//         buyBtn.classList.add = 'buyBtnShadow';
+// console.log(imgsMedia);
+
+// imgsMedia.forEach(imgMedia => {
+//     imgMedia.addEventListener('mouseover', () => {
+//         imgMedia.classList.add = 'zoom';
+//         console.log('eee');
 //     });
-//     buyBtn.addEventListener('mouseout', () => {
-//         buyBtn.classList.remove = 'buyBtnShadow';
+//     imgMedia.addEventListener('mouseout', () => {
+//         imgMedia.classList.remove = 'zoom';
 //     });
 // })
 
-//Изменение рамки картинок при наведении в медиа
+// Изменение рамки картинок при наведении в медиа
 
 // let mediaImages = document.querySelectorAll('.imgMedia');
 
@@ -150,14 +152,6 @@ show(imgIndex);
 // })
 // console.log(mediaImages);
 
-
-// Админ
-
-let registerBtn = document.getElementById('registerBtn');
-
-registerBtn.addEventListener('click', () => {
-    window.location.href = "admin.html";
-})
 
 
 //Открытие меню-бургера

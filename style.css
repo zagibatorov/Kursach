@@ -423,7 +423,7 @@ body{
         border: 5px solid black;
         border-radius: 25px;
         opacity: 0;
-        transition: all 1s ease;
+        transition: opacity 1s ease-in-out;
     }
     
     .char:nth-child(1){
@@ -662,13 +662,6 @@ body{
     .logos a:nth-child(3) img{
         width: 2.3em;
         height: 100%;
-    }
-    
-    .support p{
-        text-align: center;
-        font-size: 10px;
-        color: white;
-        margin: 0 0 10px 0;
     }
 }
 @media (min-width: 430px) and (max-width: 479px) {
@@ -1312,13 +1305,6 @@ body{
         width: 3.5em;
         height: 100%;
     }
-
-    .support p{
-        text-align: center;
-        font-size: 15px;
-        color: white;
-        margin: 0 0 10px 0;
-    }
 }
 @media (min-width: 480px) and (max-width: 819px) {
     .header, .mainScreen, .about, .characters, .media{
@@ -1940,13 +1926,7 @@ body{
         width: 4.5em;
         height: 100%;
     }
-    
-    .support p{
-        text-align: center;
-        font-size: 17px;
-        color: white;
-        margin: 0 0 10px 0;
-    }
+
 }
 @media (min-width: 820px) and (max-width: 1558px) {   
     .header, .mainScreen, .about, .characters, .media{
@@ -2523,16 +2503,6 @@ body{
         width: 4em;
         height: 4em;
     }
-
-    /* .logos a:nth-child(3) img{
-        width: 8.1em;
-        height: 8.1em;
-    } */
-    
-    .support p{
-        text-align: center;
-        color: white;
-    }
 }
 @media (min-width: 1559px) {
     .header, .mainScreen, .about, .characters, .media{
@@ -2798,6 +2768,10 @@ body{
     .imgPart:hover img{
         transform: translateY(-100px);
     }
+
+
+
+    /* третий блок (персонажи) */
     
     .card{
         margin: 77px 0;
@@ -2866,7 +2840,7 @@ body{
         border: 5px solid black;
         border-radius: 25px;
         opacity: 0;
-        transition: all 1s ease;
+        transition: opacity 3s ease;
     }
     
     .char:nth-child(1){
@@ -3098,12 +3072,6 @@ body{
     .logos a:nth-child(3) img{
         width: 7em;
         height: 100%;
-    }
-    
-    .support p{
-        text-align: center;
-        font-size: 20px;
-        color: white;
     }
 }
 
