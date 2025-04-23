@@ -100,60 +100,6 @@ controls.forEach((e) => {
 
 show(imgIndex);
 
-
-
-
-// let currentIndex = 0;
-
-// function showSlide(index){
-//     chars.forEach((char, i) => {
-//         char.classList.toggle('active', i === index);
-//         pages[i].classList.toggle('pageActive', i === index);
-//     })
-// };
-
-// pages.forEach((page, index)=>{
-//     page.addEventListener('click', function(){
-//         currentIndex = index;
-//         showSlide(currentIndex);
-//     });
-// })
-
-
-
-
-//Увеличение кнопок в первом блоке
-
-// let imgsMedia = document.querySelectorAll('.imgMedia');
-
-// console.log(imgsMedia);
-
-// imgsMedia.forEach(imgMedia => {
-//     imgMedia.addEventListener('mouseover', () => {
-//         imgMedia.classList.add = 'zoom';
-//         console.log('eee');
-//     });
-//     imgMedia.addEventListener('mouseout', () => {
-//         imgMedia.classList.remove = 'zoom';
-//     });
-// })
-
-// Изменение рамки картинок при наведении в медиа
-
-// let mediaImages = document.querySelectorAll('.imgMedia');
-
-// mediaImages.forEach(imgMedia => {
-//     imgMedia.addEventListener('mouseover', () => {
-//         imgMedia.style.backgroundColor = 'gold';
-//     })
-//     imgMedia.addEventListener('mouseout', () => {
-//         imgMedia.style.backgroundColor = '';
-//     })
-// })
-// console.log(mediaImages);
-
-
-
 //Открытие меню-бургера
 
 let burgerMenu = document.querySelector('.menuBurger');
