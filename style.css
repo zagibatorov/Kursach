@@ -293,8 +293,6 @@ body{
     
     /* второй блок (об игре)*/
     .about{
-        background-image: url(./images/CornBackg.png);
-        background-repeat: no-repeat;
         font-size: 15px;
     }
     
@@ -565,8 +563,6 @@ body{
     
     /* четвёртый блок (медиа) */
     .media{
-        background-image: url(./images/MediaBackg.png);
-        background-repeat: no-repeat;
         font-size: 16px;
     }
     
@@ -605,24 +601,9 @@ body{
         box-shadow: 0 0 10px 10px #6A9EFF;
     }
     
-    /* .imagesTop .imgMedia:nth-child(1){
-        transform: rotate(-7deg);
-    }
-    
-    .imagesTop .imgMedia:nth-child(3){
-        transform: rotate(7deg);
-    }
-    
-    .imagesBottom .imgMedia:nth-child(1){
-        transform: rotate(-5deg);
-    }
-    
-    .imagesBottom .imgMedia:nth-child(2){
-        transform: rotate(5deg);
-    } */
-    
     .imgMediaGif{
         order: 3;
+        image-rendering: pixelated;
     }
     
     .imgMediaGif img{
@@ -1246,23 +1227,8 @@ body{
         box-shadow: 0 0 10px 10px #6A9EFF;
     }
     
-    /* .imagesTop .imgMedia:nth-child(1){
-        transform: rotate(-7deg);
-    }
-    
-    .imagesTop .imgMedia:nth-child(3){
-        transform: rotate(7deg);
-    }
-    
-    .imagesBottom .imgMedia:nth-child(1){
-        transform: rotate(-5deg);
-    }
-    
-    .imagesBottom .imgMedia:nth-child(2){
-        transform: rotate(5deg);
-    } */
-    
     .imgMediaGif{
+        image-rendering: pixelated;
         order: 3;
     }
     
@@ -1886,6 +1852,7 @@ body{
     
     .imgMediaGif{
         order: 3;
+        image-rendering: pixelated;
     }
     
     .imgMediaGif img{
@@ -2475,6 +2442,7 @@ body{
     
     .imgMediaGif{
         width: 10em;
+        image-rendering: pixelated;
     }
     
     .imgMediaGif img{
@@ -3039,6 +3007,7 @@ body{
     
     .imgMediaGif{
         width: 300px;
+        image-rendering: pixelated;
     }
     
     .imgMediaGif img{
