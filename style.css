@@ -641,7 +641,7 @@ body{
 
     
     .logos a:nth-child(3) img{
-        width: 2.3em;
+        width: 1.6em;
         height: 100%;
     }
 }
@@ -1268,7 +1268,7 @@ body{
 
     
     .logos a:nth-child(3) img{
-        width: 3.5em;
+        width: 2.4em;
         height: 100%;
     }
 }
@@ -1890,7 +1890,7 @@ body{
 
     
     .logos a:nth-child(3) img{
-        width: 4.5em;
+        width: 3.1em;
         height: 100%;
     }
 
@@ -2466,11 +2466,17 @@ body{
     .logos{
         align-items: center;
         justify-content: center;
+        gap: 10px;
     }
 
     .logos a img{
         width: 4em;
-        height: 4em;
+        height: 100%;
+    }
+
+    .logos a:nth-child(3) img{
+        width: 3.3em;
+        height: 100%;
     }
 }
 @media (min-width: 1559px) {
@@ -2961,6 +2967,7 @@ body{
     }
     
     .imagesTop{
+        margin-bottom: 100px;
         gap: 50px;
     }
     
@@ -3047,7 +3054,7 @@ body{
     }
 
     .logos a:nth-child(3) img{
-        width: 7em;
+        width: 4.8em;
         height: 100%;
     }
 }

@@ -10,7 +10,6 @@ let charBlock = document.getElementById('charBlock');
 let mediaBlock = document.getElementById('mediaBlock');
 let footer = document.getElementById('footer');
 
-
 toAbout.addEventListener('click', () => {
     aboutBlock.scrollIntoView({
         behavior: 'smooth',
@@ -33,6 +32,43 @@ toMedia.addEventListener('click', () => {
 });
 
 toFooter.addEventListener('click', () => {
+    footer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
+
+
+//Переходы к блокам по кнопкам в хедере на мобиле
+
+let toAboutMob = document.getElementById('toAboutMob');
+let toCharMob = document.getElementById('toCharMob');
+let toMediaMob = document.getElementById('toMediaMob');
+let toFooterMob = document.getElementById('toFooterMob');
+
+toAboutMob.addEventListener('click', () => {
+    aboutBlock.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
+toCharMob.addEventListener('click', () => {
+    charBlock.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
+toMediaMob.addEventListener('click', () => {
+    mediaBlock.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
+toFooterMob.addEventListener('click', () => {
     footer.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
