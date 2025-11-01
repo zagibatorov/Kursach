@@ -134,6 +134,40 @@ controls.forEach((e) => {
     })
 })
 
+//Объёмные карточки
+chars.forEach(char => {
+    char.addEventListener('mousemove', function(e){
+
+        const rect = this.getBoundingClientRect(); //объект координат карточки
+
+        const x = e.clientX - rect.left; //позиция курсора по X
+        const y = e.clientY - rect.top; //позиция курсора по Y
+
+        // Проценты от ширины/высоты
+        const xPercent = Math.floor((x / rect.width ) * 100);
+        const yPercent = Math.floor((y / rect.height ) * 100);
+
+        // Угол наклона на основе позиции курсора
+        const tiltX = ((yPercent - 50) / 5); // Наклон по X
+        const tiltY = ((50 - xPercent) / 5); // Наклон по X
+
+        this.style.transform = `
+            scale(1.1)
+            perspective(1000px)
+            rotateX(${tiltX}deg)
+            rotateY(${tiltY}deg)
+        `;
+
+    });
+            
+    char.addEventListener('mouseleave', function() {
+        // Возвращаем карточку в исходное состояние
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = 'none';
+    });
+
+});
+
 show(imgIndex);
 
 //Открытие меню-бургера
