@@ -134,6 +134,8 @@ controls.forEach((e) => {
     })
 })
 
+show(imgIndex);
+
 //Объёмные карточки
 chars.forEach(char => {
     char.addEventListener('mousemove', function(e){
@@ -168,7 +170,23 @@ chars.forEach(char => {
 
 });
 
-show(imgIndex);
+let imgsMedia = document.querySelectorAll('.imgMedia');
+
+imgsMedia[0].addEventListener('click', function(){
+    console.log('lol');
+});
+
+imgsMedia[1].addEventListener('click', function(){
+    console.log('lel');
+});
+
+imgsMedia[2].addEventListener('click', function(){
+    console.log('lil');
+});
+
+imgsMedia[3].addEventListener('click', function(){
+    console.log('lul');
+});
 
 //Открытие меню-бургера
 
@@ -183,3 +201,54 @@ burgerMenu.addEventListener('click', () => {
         headerButtonsMobile.style.display = 'none';
     }
 })
+
+
+// Функция для проверки видимости элемента
+function isElementInViewport(elem) {
+    const rect = elem.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 &&
+        rect.bottom >= 0
+    );
+}
+
+// Функция для обработки прокрутки
+// function handleScroll() {
+//     const header = document.querySelector('.header');
+//     const mainScreen = document.querySelector('.mainScreen');
+//     const about = document.querySelector('.about'); 
+//     const characters = document.querySelector('.characters');
+//     const media = document.querySelector('.media');
+//     const footer = document.querySelector('.footer');
+
+//     if(isElementInViewport(header)){
+//         header.classList.add('visible');
+//     }
+
+//     if (isElementInViewport(mainScreen)) {
+//         mainScreen.classList.add('visible');
+//     }
+
+//     if (isElementInViewport(about)) {
+//         about.classList.add('visible');
+//     }    
+    
+//     if (isElementInViewport(characters)) {
+//         characters.classList.add('visible');
+//     }
+
+//     if (isElementInViewport(media)) {
+//         media.classList.add('visible');
+//     }
+
+//     if (isElementInViewport(footer)) {
+//         footer.classList.add('visible');
+//     }
+    
+// }
+
+// Добавляем обработчик события прокрутки
+// window.addEventListener('scroll', handleScroll);
+
+// Также проверяем при загрузке страницы (на случай если элемент уже в viewport)
+// window.addEventListener('load', handleScroll);
