@@ -172,20 +172,52 @@ chars.forEach(char => {
 
 let imgsMedia = document.querySelectorAll('.imgMedia');
 
+let imgMediaTopLeft = document.querySelector('.imgMediaFullTL');
+let imgMediaTopRight = document.querySelector('.imgMediaFullTR');
+let imgMediaBottomLeft = document.querySelector('.imgMediaFullBL');
+let imgMediaBottomRight = document.querySelector('.imgMediaFullBR');
+
+
 imgsMedia[0].addEventListener('click', function(){
     console.log('lol');
+    console.log(imgMediaBottomLeft);
+    if(imgMediaTopLeft.style.opacity == 0){
+        imgMediaTopLeft.style.opacity = 1;
+    }
+    else{
+        imgMediaTopLeft.style.opacity = 0
+    }
+    
 });
 
 imgsMedia[1].addEventListener('click', function(){
     console.log('lel');
+    if(imgMediaTopRight.style.opacity == 0){
+        imgMediaTopRight.style.opacity = 1;
+    }
+    else{
+        imgMediaTopRight.style.opacity = 0
+    }
 });
 
 imgsMedia[2].addEventListener('click', function(){
     console.log('lil');
+        if(imgMediaBottomLeft.style.opacity == 0){
+        imgMediaBottomLeft.style.opacity = 1;
+    }
+    else{
+        imgMediaBottomLeft.style.opacity = 0
+    }
 });
 
 imgsMedia[3].addEventListener('click', function(){
     console.log('lul');
+        if(imgMediaBottomRight.style.opacity == 0){
+        imgMediaBottomRight.style.opacity = 1;
+    }
+    else{
+        imgMediaBottomRight.style.opacity = 0
+    }
 });
 
 //Открытие меню-бургера
