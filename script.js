@@ -170,6 +170,8 @@ chars.forEach(char => {
 
 });
 
+//Открытие картинок во весь экран по нажатию в Медиа
+
 let imgsMedia = document.querySelectorAll('.imgMedia');
 
 let imgMediaTopLeft = document.querySelector('.imgMediaFullTL');
@@ -179,46 +181,57 @@ let imgMediaBottomRight = document.querySelector('.imgMediaFullBR');
 
 
 imgsMedia[0].addEventListener('click', function(){
-    console.log('lol');
-    console.log(imgMediaBottomLeft);
-    if(imgMediaTopLeft.style.opacity == 0){
-        imgMediaTopLeft.style.opacity = 1;
-    }
-    else{
-        imgMediaTopLeft.style.opacity = 0
-    }
-    
+    imgMediaTopLeft.classList.remove('imgMediaInactive');
+    imgMediaTopLeft.classList.add('imgMediaVisible');
 });
 
 imgsMedia[1].addEventListener('click', function(){
-    console.log('lel');
-    if(imgMediaTopRight.style.opacity == 0){
-        imgMediaTopRight.style.opacity = 1;
-    }
-    else{
-        imgMediaTopRight.style.opacity = 0
-    }
+    imgMediaTopRight.classList.remove('imgMediaInactive');
+    imgMediaTopRight.classList.add('imgMediaVisible');
 });
 
 imgsMedia[2].addEventListener('click', function(){
-    console.log('lil');
-        if(imgMediaBottomLeft.style.opacity == 0){
-        imgMediaBottomLeft.style.opacity = 1;
-    }
-    else{
-        imgMediaBottomLeft.style.opacity = 0
-    }
+    imgMediaBottomLeft.classList.remove('imgMediaInactive');
+    imgMediaBottomLeft.classList.add('imgMediaVisible');
 });
 
 imgsMedia[3].addEventListener('click', function(){
-    console.log('lul');
-        if(imgMediaBottomRight.style.opacity == 0){
-        imgMediaBottomRight.style.opacity = 1;
-    }
-    else{
-        imgMediaBottomRight.style.opacity = 0
-    }
+    imgMediaBottomRight.classList.remove('imgMediaInactive');
+    imgMediaBottomRight.classList.add('imgMediaVisible');
 });
+
+
+
+//Закрытие картинок
+
+const closeBtnTL = document.querySelector('.closeBtnTL');
+const closeBtnTR = document.querySelector('.closeBtnTR');
+const closeBtnBL = document.querySelector('.closeBtnBL');
+const closeBtnBR = document.querySelector('.closeBtnBR');
+
+closeBtnTL.addEventListener('click', function(){
+    imgMediaTopLeft.classList.remove('imgMediaVisible');
+    imgMediaTopLeft.classList.add('imgMediaInactive');
+});
+
+closeBtnTR.addEventListener('click', function(){
+    imgMediaTopRight.classList.remove('imgMediaVisible');
+    imgMediaTopRight.classList.add('imgMediaInactive');
+});
+
+closeBtnBL.addEventListener('click', function(){
+    imgMediaBottomLeft.classList.remove('imgMediaVisible');
+    imgMediaBottomLeft.classList.add('imgMediaInactive');
+});
+
+closeBtnBR.addEventListener('click', function(){
+    imgMediaBottomRight.classList.remove('imgMediaVisible');
+    imgMediaBottomRight.classList.add('imgMediaInactive');
+});
+
+
+
+
 
 //Открытие меню-бургера
 

@@ -2544,44 +2544,71 @@ body{
         background-color: rgba(0, 0, 0, 0.7);
     }
     
-
-    .imgMediaFullTL{
+    .imgMediaFullTL, .imgMediaFullTR, .imgMediaFullBL, .imgMediaFullBR{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        height: 150px;
-        background-color: green;
+        height: 1080px;
+        background-color: rgba(0, 0, 0, 0.7);
         position: fixed;
         z-index: 10;
         opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s ease, visibility 1s ease;
     }
 
-    
-    .imgMediaFullTR{
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        position: fixed;
-        z-index: 10;
-        opacity: 0;
+    .imgMediaVisible{
+        opacity: 1;
+        visibility: visible;
     }
 
-    
-    .imgMediaFullBL{
-        width: 100px;
-        height: 100px;
-        background-color: blue;
-        position: fixed;
-        z-index: 10;
+    .imgMediaInactive{
         opacity: 0;
+        visibility: hidden;
     }
 
+    .fullImage{
+        width: 1500px;
+        height: 850px;
+        margin: 50px;
+    }
+
+    .TL{
+        background-image: url(./images/backOffBarbarianFull.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .TR{
+        background-image: url(./images/AlienShip.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .BR{
+        background-image: url(./images/LavaWorldPicFull.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }  
     
-    .imgMediaFullBR{
-        width: 100px;
-        height: 100px;
-        background-color: orange;
-        position: fixed;
-        z-index: 10;
-        opacity: 0;
+    .BL{
+        background-image: url(./images/BarbarianBoss.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .closeBtnTL, .closeBtnTR, .closeBtnBL, .closeBtnBR{
+        width: 75px;
+        height: 75px;
+        background-color: gray;
+        position: absolute;
+        left: 1750px;
+        top: 50px;
+        cursor: pointer;
+        background-image: url(./images/krestik.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
