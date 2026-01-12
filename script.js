@@ -136,7 +136,10 @@ controls.forEach((e) => {
 
 show(imgIndex);
 
+
+
 //Объёмные карточки
+
 chars.forEach(char => {
     char.addEventListener('mousemove', function(e){
 
@@ -159,7 +162,6 @@ chars.forEach(char => {
             rotateX(${tiltX}deg)
             rotateY(${tiltY}deg)
         `;
-
     });
             
     char.addEventListener('mouseleave', function() {
@@ -169,6 +171,8 @@ chars.forEach(char => {
     });
 
 });
+
+
 
 //Открытие картинок во весь экран по нажатию в Медиа
 
@@ -231,8 +235,6 @@ closeBtnBR.addEventListener('click', function(){
 
 
 
-
-
 //Открытие меню-бургера
 
 let burgerMenu = document.querySelector('.menuBurger');
@@ -256,6 +258,8 @@ function isElementInViewport(elem) {
         rect.bottom >= 0
     );
 }
+
+
 
 // Функция для обработки прокрутки
 // function handleScroll() {
