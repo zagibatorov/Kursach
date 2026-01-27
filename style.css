@@ -106,7 +106,7 @@ body{
     }
     
     .headerImg img{
-        width: 14em;
+        width: 15em;
         height: 100%;
     }
     
@@ -650,28 +650,40 @@ body{
     }
     
     .footerLogo img{
-        width: 13em;
-        height: 100%;
+        width: 23em;
         margin-top: 10px;
     }
     
     .logos{
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
         gap: 15px;
     }
 
     .logos a img{
-        width: 2em;
+        width: 5em;
         height: 100%;
     }
-
     
     .logos a:nth-child(3) img{
         width: 1.6em;
         height: 100%;
     }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo p{
+        color: white;
+    }
+
 }
+
 @media (min-width: 430px) and (max-width: 479px) {
     .header, .mainScreen, .about, .characters, .media{
         width: 100%;
